@@ -1,13 +1,14 @@
 body {
   margin: 0;
+  width: 100vw;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Dancing Script', cursive;
-  --primary-black: #303030;
-  --primary-light-black: #f5f1ee;
-  --second-color: #cd7752;
-  --second-light-color: #faf1ed;
-  --new-color: #e30514;
+  font-family: 'Poppins', cursive;
+  --primary-red:  #ff0022;
+  --primary-main: #edfdfb;
+  --primary-gray: #b9bab8;
+  --primary-pink: #f8e9f2;
+  --primary-black: #04030f;
 
   --logo-font: 'Dancing Script';
   --primary-font: 'Poppins';
@@ -15,11 +16,6 @@ body {
 
 a {
   text-decoration: none;
-}
-
-h1 {
-  font-family: var(--logo-font);
-  font-weight: 900;
 }
 h2 {
   font-family: var(--primary-font);
@@ -29,8 +25,4 @@ ul {
   list-style-type: none;
 }
 
-.App img {
-  width: 35px;
-  height: 35px;
-  fill: var(--second-color);
-}
+

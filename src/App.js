@@ -1,11 +1,18 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+//components
+import Home from './Pages/Home';
+import Menu from './Pages/Menu';
+import Login from './Pages/Login';
+import Signup from './Pages/Signup';
+
+//product imports
 import CHICKEN from './utils/chicken';
 import PIZZA from './utils/pizza';
 import STEAK from './utils/steak';
 import DRINK from './utils/drink';
 import VEGETARIAN from './utils/vegetarian';
 import PASTA from './utils/pasta';
-
-import rose from './assets/icons/logo.svg';
 
 let allProduct = [
   ...PIZZA,
@@ -17,15 +24,15 @@ let allProduct = [
 ];
 
 function App() {
-  console.log(allProduct);
   return (
-    <div className='App'>
-      <h1>
-        Rose's
-        <img src={rose} alt='' />
-      </h1>
-      <h2>this is a test </h2>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/menu' element={<Menu />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/signup' element={<Signup />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
