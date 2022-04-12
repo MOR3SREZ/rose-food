@@ -4,13 +4,15 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', cursive;
-  --primary-red:  #ff0022;
-  --primary-main: #edfdfb;
-  --primary-gray: #b9bab8;
-  --primary-pink: #f8e9f2;
-  --primary-black: #04030f;
+  --primary-red:  #fe734e;
+  --primary-black: #292821;
+  --primary-orange: #ffb81a;
 
-  --logo-font: 'Dancing Script';
+  /* #F5DCDC , #F5F0DC, #F6F6F6 , #DCF5E3 , #DCDEF5*/
+  /* #fec6b8 ,#daa633 , #292821 , #fe724c , #fe734e*/
+  /*#ffb81a, #fe734e */
+
+  --logo-font:  'Rubik Moonrocks', cursive;
   --primary-font: 'Poppins';
 }
 
