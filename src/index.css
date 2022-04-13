@@ -1,9 +1,9 @@
 body {
   margin: 0;
-  width: 100vw;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', cursive;
+  
   --primary-red:  #fe734e;
   --primary-black: #292821;
   --primary-orange: #ffb81a;
@@ -15,16 +15,19 @@ body {
   --logo-font:  'Rubik Moonrocks', cursive;
   --primary-font: 'Poppins';
 }
+.App{
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
 
 a {
   text-decoration: none;
-}
-h2 {
-  font-family: var(--primary-font);
 }
 
 ul {
   list-style-type: none;
 }
+
 
 
