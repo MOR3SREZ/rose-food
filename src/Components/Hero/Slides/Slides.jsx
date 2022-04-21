@@ -24,13 +24,20 @@ const Slides = ({item}) => {
         there is no doubt you can get a new life with it
       </p>
      <Link to='/menu'>
-       <motion.button className='action-button'  onHoverStart={() => setHovered(true)}
-        onHoverEnd={() => setHovered(false)}>Explore Menu 
-       <motion.span animate={isHover?{x:'20%'}:{x:0}} transition={{ease:'easeIn', duration:0.2}}>
+       <motion.button 
+        className='action-button'
+        onHoverStart={() => setHovered(true)}
+        onHoverEnd={() => setHovered(false)}
+        >
+          Explore Menu 
+       <motion.span 
+        animate={isHover?{x:'20%'}:{x:0}} 
+        transition={{ease:'easeIn', duration:0.2}}
+       >
          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
-         </motion.span>
+        </motion.span>
        </motion.button>
-       </Link> 
+      </Link> 
     </div>
   </div></>
   )
