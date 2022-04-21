@@ -1,17 +1,17 @@
 nav{
   width: 100%;
-  padding:0rem 4rem;
+  padding:0.5rem 4rem;
   box-sizing: border-box;
-  height: 10vh;
-  /* background-color: var(--primary-red); */
-  /*todo  blur background*/
-  background: rgba( 255, 255, 255, 0.3 );
-  backdrop-filter: blur(8px );
+  position: fixed;
+  background: rgba( 255, 255, 255, 0 );
+  backdrop-filter: blur( 8px );
   -webkit-backdrop-filter: blur( 8px );
-  border: 1px solid rgba( 255, 255, 255, 0.8 );
+  -moz-backdrop-filter: blur( 8px );
+  border: 1px solid rgba( 255, 255, 255, 0.1 );
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 100;
 }
 
 .logo{
@@ -24,6 +24,8 @@ align-items: center;
   font-size: 2rem;
   font-family: var(--logo-font);
   font-weight: 900;
+  padding: 0;
+  margin: 0;
   color: var(--primary-black);
 }
 
@@ -72,16 +74,15 @@ flex: 4;
 
 .cart-counter{
   position: absolute;
-  top: -15%;
-  right: -20%;
+  top: -10%;
+  right: -15%;
   border-radius: 50%;
   color: var(--primary-black);
   background-color: aliceblue;
-  padding: 5px;
+  padding: 11px;
   font-size: 0.8rem;
   width: 15px;
   height: 15px;
-
   font-weight: 900;
   display: flex;
   align-items: center;

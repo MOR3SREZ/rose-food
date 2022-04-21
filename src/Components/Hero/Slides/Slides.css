@@ -1,0 +1,94 @@
+.image-container{
+  width: 100%;
+  height:80%;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-container img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.product__hero-title{
+  position: absolute;
+  padding: 0;
+  z-index: 1;
+  margin: 0;
+  font-family: var(--logo-font);
+  color: var(--primary-black);
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: calc(5rem + 10vw);
+  letter-spacing: 2rem;
+
+}
+.product__hero-content{
+  position: absolute;
+  width: 100%;
+  padding-top: 4rem;
+  color: var(--primary-black);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+  z-index: 4;
+}
+
+.quote-side{
+  padding-right:4rem;
+  width: 25%;
+}
+p.quote-quote{
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-family: var(--primary-font)!important;
+}
+p.quote-author{
+  font-family: var(--primary-font)!important;
+  font-style: italic;
+  margin-top:0.5rem ;
+
+}
+
+.action-side{
+  padding-left:4rem;
+  width: 25%;
+}
+.action-side p{
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-family: var(--primary-font)!important;
+}
+.action-side p span{
+  color: var(--primary-red);
+  text-transform: uppercase;
+}
+.action-side button{
+  font-family: var(--primary-font)!important;
+  margin-top:0.5rem ;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+  font-weight: 900;
+  background-color: var(--primary-orange);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.action-side button span{
+  
+  width: 15px;
+  display: flex;
+  align-items: center;
+  height: 15px;
+}
+.action-side button span svg{
+  width: 100%;
+}
