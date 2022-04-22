@@ -4,7 +4,7 @@ import React from 'react'
 import Header from '../Layout/Header'
 import Hero from '../Components/Hero/Hero'
 import Services from '../Components/Services/Services'
-import OffRecipes from '../Components/OffRecipes/OffRecipes'
+import SpacialFoods from '../Components/SpacialFoods/SpacialFoods'
 
 const Home = () => {
   return (
@@ -12,10 +12,8 @@ const Home = () => {
     <Header />
     <Hero/>
     <Services />
-    <OffRecipes />
+    <SpacialFoods />
   </>
-    
-
   )
 }
 

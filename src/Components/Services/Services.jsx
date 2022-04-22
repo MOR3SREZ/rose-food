@@ -10,6 +10,7 @@ import HotFood from '../../assets/icons/HotFood'
 
 //styles
 import styles from './Services.module.css'
+import Rose from '../../assets/icons/Rose'
 
 const Services = () => {
   return (
@@ -22,6 +23,9 @@ const Services = () => {
         <CardServices icon={<CashOnDelivery />} content={'Cash On Delivery'}/>
         <CardServices icon={<HotFood />} content={'Hot Food'}/>
         <CardServices icon={<FullTime />} content={'24H Service'}/>
+      </div>
+      <div className={styles['services-background']}>
+        <Rose color={'rgba(150,150,150,0.1)'}/>
       </div>
     </section>
   )

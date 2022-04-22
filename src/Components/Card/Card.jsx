@@ -23,13 +23,13 @@ const variants = {
 };
 
 
-const Card = ({recipe}) => {
+const Card = ({food}) => {
   const [isHover, setHovered] = useState(false);
   const [imgIsHover, setImgHovered] = useState(false);
 
   //Calc off price
-  const price = recipe.price;
-  const offPrice = (price * (+recipe.off) )/ 100;
+  const price = food.price;
+  const offPrice = (price * (+food.off) )/ 100;
   const finalPrice = price - offPrice;
 
   
@@ -47,7 +47,7 @@ console.log('finalprice', finalPrice)
         >
           <motion.img
             alt='some shit'
-            src={recipe.image}
+            src={food.image}
             animate={isHover ? 'end' : ''}
             transition={{ ease: 'easeInOut' }}
             variants={variants}
@@ -88,28 +88,28 @@ console.log('finalprice', finalPrice)
               </motion.div>
             </div>
           </motion.div>
-          {recipe.off >0 &&<span className={styles.off}>-{recipe.off}%</span>}
+          {food.off >0 &&<span className={styles.off}>-{food.off}%</span>}
         </motion.div>
         <div className={styles['detail-container']}>
           {/*todo link ti the product id  */}
           <motion.p className={styles['product-name']}
             whileHover={{color:'var(--primary-red)'}}
             transition={{duration:0.3}}
-          >{recipe.title}</motion.p>
+          >{food.title}</motion.p>
          <div className={styles["price-rate"]}>
           <p className={styles['product-price']}> 
            {
-             finalPrice !== price ?
+             +finalPrice !== +price ?
              <> 
-             <span className={styles['final-price']}>{finalPrice.toFixed(1)+0} $</span>
-              <span className={styles['old-price']}>{price} $</span></>
+             <span className={styles['final-price']}>{` $${finalPrice.toFixed(1)+0} USD`}</span>
+              <span className={styles['old-price']}>{`$${price} USD`}</span></>
                :
-               <span className={styles['final-price']}>{recipe.price}  $</span>
+               <span className={styles['final-price']}>{` $${food.price} USD`}</span>
            }
            </p>
            <p className={styles['recipe-rate']}>
              <span className={styles.star}><Star /></span>
-             <span className={styles.rate}>{recipe.rate}</span>
+             <span className={styles.rate}>{food.rate}</span>
            </p>
           </div>
         </div>

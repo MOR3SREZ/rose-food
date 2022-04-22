@@ -15,9 +15,9 @@ import VEGETARIAN from './utils/vegetarian';
 import PASTA from './utils/pasta';
 
 export const allProduct = [
-  ...PIZZA,
-  ...CHICKEN,
   ...PASTA,
+  ...CHICKEN,
+  ...PIZZA,
   ...STEAK,
   ...VEGETARIAN,
   ...DRINK,
