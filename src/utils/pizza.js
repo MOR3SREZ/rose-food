@@ -24,6 +24,7 @@ const PIZZA = [
     price: '15.23',
     rate: '4.8',
     image: pizza1,
+    off: '0',
     ingredients: [
       'Flour',
       'Prosciutto Crudo',
@@ -42,6 +43,7 @@ const PIZZA = [
     category: 'pizza',
     price: '11.60',
     rate: '4.6',
+    off: '20',
     image: pizza2,
     ingredients: [
       'Flour',
@@ -60,6 +62,7 @@ const PIZZA = [
     price: '10.50',
     rate: '4.6',
     image: pizza12,
+    off: '0',
     ingredients: [
       'Tomato Sauce',
       'Chili Flakes',
@@ -78,6 +81,7 @@ const PIZZA = [
     price: '8.00',
     rate: '4.5',
     image: pizza8,
+    off: '0',
     ingredients: ['Tomato', 'Flour', 'Mozzarella', 'Basil', 'Olives'],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
@@ -89,6 +93,7 @@ const PIZZA = [
     price: '12.90',
     rate: '3.8',
     image: pizza10,
+    off: '10',
     ingredients: [
       'Smoky BBQ sauce',
       'mozzarella',
@@ -107,6 +112,7 @@ const PIZZA = [
     price: '10.50',
     rate: '4.9',
     image: pizza9,
+    off: '0',
     ingredients: ['Homemade tomato sauce', 'mozzarella', 'ham', 'pineapple '],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
@@ -118,6 +124,7 @@ const PIZZA = [
     price: '10.00',
     rate: '4.1',
     image: pizza6,
+    off: '0',
     ingredients: ['Homemade tomato sauce', 'mozzarella', 'ham', 'pineapple '],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
@@ -129,6 +136,7 @@ const PIZZA = [
     price: '13.00',
     rate: '3.5',
     image: pizza7,
+    off: '12',
     ingredients: [
       'Tomato Sauce',
       'Prosciutto Cotto',
@@ -147,6 +155,7 @@ const PIZZA = [
     price: '9.99',
     rate: '3.2',
     image: pizza4,
+    off: '0',
     ingredients: ['Homemade tomato sauce', 'mozzarella', 'ham', 'pineapple '],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
@@ -158,6 +167,7 @@ const PIZZA = [
     price: '14.30',
     rate: '4.7',
     image: pizza3,
+    off: '0',
     ingredients: [
       'mozzarella',
       'Homemade tomato sauce',
@@ -176,6 +186,7 @@ const PIZZA = [
     price: '12.80',
     rate: '4.8',
     image: pizza5,
+    off: '0',
     ingredients: [
       'Homemade tomato sauce',
       'Tomato Sauce',
@@ -192,6 +203,7 @@ const PIZZA = [
     price: '15.80',
     rate: '3.9',
     image: pizza14,
+    off: '0',
     ingredients: ['Homemade tomato sauce', 'mozzarella', 'ham', 'pineapple '],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
@@ -203,6 +215,7 @@ const PIZZA = [
     price: '10.90',
     rate: '4.4',
     image: pizza11,
+    off: '0',
     ingredients: ['Homemade tomato sauce', 'mozzarella', 'ham', 'pineapple '],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
@@ -214,6 +227,7 @@ const PIZZA = [
     price: '11.00',
     rate: '4',
     image: pizza13,
+    off: '0',
     ingredients: ['Homemade tomato sauce', 'mozzarella', 'ham', 'pineapple '],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
@@ -225,6 +239,7 @@ const PIZZA = [
     price: '9.00',
     rate: '3.1',
     image: pizza16,
+    off: '0',
     ingredients: ['Homemade tomato sauce', 'mozzarella', 'ham', 'pineapple '],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
@@ -236,6 +251,7 @@ const PIZZA = [
     price: '9.50',
     rate: '3.2',
     image: pizza15,
+    off: '12',
     ingredients: ['Homemade tomato sauce', 'mozzarella', 'ham', 'pineapple '],
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi a eveniet nam, laudantium soluta autem praesentium, vero sint quis, odit necessitatibus in! Dicta, amet quae in repudiandae reprehenderit, harum iste quod totam minima deleniti culpa!',

@@ -20,6 +20,7 @@ const VEGETARIAN = [
     price: '12',
     rate: '3.2',
     image: vegetarian1,
+    off: '10',
     ingredients: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'],
     description:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur doloribus rerum minus nostrum fugiat quibusdam! Ea atque ut quasi cum ex adipisci distinctio quidem autem. Excepturi, quia iste nihil eum provident mollitia tempora voluptate ad.',
@@ -31,6 +32,7 @@ const VEGETARIAN = [
     price: '13.55',
     rate: '3.8',
     image: vegetarian2,
+    off: '12',
     ingredients: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus sed quae at asperiores perspiciatis culpa animi optio corporis dolorum? Quidem at explicabo voluptatem dolores voluptatibus earum voluptas iste! Iste, quia ab dolorem sunt minima earum.',
@@ -42,6 +44,7 @@ const VEGETARIAN = [
     price: '13.66',
     rate: '3.9',
     image: vegetarian3,
+    off: '0',
     ingredients: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
@@ -53,6 +56,7 @@ const VEGETARIAN = [
     price: '18.10',
     rate: '4.1',
     image: vegetarian4,
+    off: '0',
     ingredients: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
@@ -64,6 +68,7 @@ const VEGETARIAN = [
     price: '17.99',
     rate: '3.5',
     image: vegetarian5,
+    off: '0',
     ingredients: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
@@ -75,6 +80,7 @@ const VEGETARIAN = [
     price: '13.00',
     rate: '4.3',
     image: vegetarian6,
+    off: '0',
     ingredients: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
@@ -86,6 +92,7 @@ const VEGETARIAN = [
     price: '15.10',
     rate: '3.8',
     image: vegetarian7,
+    off: '0',
     ingredients: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
@@ -97,6 +104,7 @@ const VEGETARIAN = [
     price: '16.50',
     rate: '3.6',
     image: vegetarian8,
+    off: '0',
     ingredients: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
@@ -108,6 +116,7 @@ const VEGETARIAN = [
     price: '20.00',
     rate: '3',
     image: vegetarian9,
+    off: '0',
     ingredients: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
@@ -119,6 +128,7 @@ const VEGETARIAN = [
     price: '17.99',
     rate: '4.3',
     image: vegetarian10,
+    off: '0',
     ingredients: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
@@ -130,6 +140,7 @@ const VEGETARIAN = [
     price: '18.00',
     rate: '4.9',
     image: vegetarian11,
+    off: '0',
     ingredients: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
@@ -141,6 +152,7 @@ const VEGETARIAN = [
     price: '14.00',
     rate: '4.4',
     image: vegetarian12,
+    off: '0',
     ingredients: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',

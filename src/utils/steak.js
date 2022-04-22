@@ -14,6 +14,7 @@ const STEAK = [
     price: '27.13',
     rate: '4.6',
     image: steak1,
+    off: '12',
     ingredients: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'],
     description:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur doloribus rerum minus nostrum fugiat quibusdam! Ea atque ut quasi cum ex adipisci distinctio quidem autem. Excepturi, quia iste nihil eum provident mollitia tempora voluptate ad.',
@@ -25,6 +26,7 @@ const STEAK = [
     price: '27.00',
     rate: '3.9',
     image: steak2,
+    off: '0',
     ingredients: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus sed quae at asperiores perspiciatis culpa animi optio corporis dolorum? Quidem at explicabo voluptatem dolores voluptatibus earum voluptas iste! Iste, quia ab dolorem sunt minima earum.',
@@ -36,6 +38,7 @@ const STEAK = [
     price: '26.30',
     rate: '4.2',
     image: steak3,
+    off: '20',
     ingredients: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
@@ -47,6 +50,7 @@ const STEAK = [
     price: '28.10',
     rate: '4.8',
     image: steak4,
+    off: '0',
     ingredients: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
@@ -58,6 +62,7 @@ const STEAK = [
     price: '27.00',
     rate: '3.5',
     image: steak5,
+    off: '0',
     ingredients: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
@@ -69,6 +74,7 @@ const STEAK = [
     price: '25.00',
     rate: '4',
     image: steak6,
+    off: '0',
     ingredients: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',

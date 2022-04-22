@@ -13,7 +13,7 @@ const Hero = () => {
   const slidesLength = HeroPictures.length;
   const autoScroll = true;
   let slideInterval;
-  let intervalTime = 5000;
+  let intervalTime = 10000;
 
   //states
   const [current, setCurrent] = useState(0);

@@ -16,6 +16,7 @@ const DRINK = [
     category: 'drink',
     price: '0.99',
     rate: '4.5',
+    off: '0',
     image: drink4,
   },
   {
@@ -24,6 +25,7 @@ const DRINK = [
     category: 'drink',
     price: '0.80',
     rate: '4',
+    off: '0',
     image: drink5,
   },
   {
@@ -32,6 +34,7 @@ const DRINK = [
     category: 'drink',
     price: '0.85',
     rate: '4.3',
+    off: '0',
     image: drink6,
   },
   {
@@ -39,7 +42,8 @@ const DRINK = [
     title: 'CocaCola 250ml',
     category: 'drink',
     price: '1.20',
-    rate: '4.9',
+    rate: '4.4',
+    off: '0',
     image: drink8,
   },
   {
@@ -48,6 +52,7 @@ const DRINK = [
     category: 'drink',
     price: '1.10',
     rate: '4.2',
+    off: '0',
     image: drink9,
   },
   {
@@ -56,6 +61,7 @@ const DRINK = [
     category: 'drink',
     price: '1.00',
     rate: '3.2',
+    off: '0',
     image: drink7,
   },
   {
@@ -64,6 +70,7 @@ const DRINK = [
     category: 'drink',
     price: '2.10',
     rate: '4.2',
+    off: '0',
     image: drink1,
   },
   {
@@ -72,6 +79,7 @@ const DRINK = [
     category: 'drink',
     price: '2',
     rate: '4.3',
+    off: '0',
     image: drink2,
   },
   {
@@ -80,6 +88,7 @@ const DRINK = [
     category: 'drink',
     price: '1.80',
     rate: '3.8',
+    off: '10',
     image: drink3,
   },
 ];

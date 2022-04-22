@@ -17,7 +17,8 @@
   z-index: 1;
   margin: 0;
   font-family: var(--logo-font);
-  color: var(--primary-black);
+  color: var(--primary-gray);
+  opacity: 0.8;
   top: 0;
   left: 50%;
   transform: translateX(-50%);

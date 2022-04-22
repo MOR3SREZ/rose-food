@@ -17,6 +17,7 @@ const CHICKEN = [
     price: '24.13',
     rate: '4.8',
     image: chicken7,
+    off: '0',
     ingredients: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'],
     description:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur doloribus rerum minus nostrum fugiat quibusdam! Ea atque ut quasi cum ex adipisci distinctio quidem autem. Excepturi, quia iste nihil eum provident mollitia tempora voluptate ad.',
@@ -28,6 +29,7 @@ const CHICKEN = [
     price: '21.60',
     rate: '4.3',
     image: chicken5,
+    off: '12',
     ingredients: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus sed quae at asperiores perspiciatis culpa animi optio corporis dolorum? Quidem at explicabo voluptatem dolores voluptatibus earum voluptas iste! Iste, quia ab dolorem sunt minima earum.',
@@ -39,6 +41,7 @@ const CHICKEN = [
     price: '20.50',
     rate: '4.8',
     image: chicken2,
+    off: '0',
     ingredients: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
@@ -50,6 +53,7 @@ const CHICKEN = [
     price: '18.00',
     rate: '3.5',
     image: chicken6,
+    off: '0',
     ingredients: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
@@ -61,6 +65,7 @@ const CHICKEN = [
     price: '22.90',
     rate: '3.8',
     image: chicken4,
+    off: '0',
     ingredients: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
@@ -72,6 +77,7 @@ const CHICKEN = [
     price: '20.50',
     rate: '3.1',
     image: chicken8,
+    off: '0',
     ingredients: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
@@ -83,6 +89,7 @@ const CHICKEN = [
     price: '20.00',
     rate: '4.1',
     image: chicken3,
+    off: '0',
     ingredients: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
@@ -94,6 +101,7 @@ const CHICKEN = [
     price: '23.00',
     rate: '4.5',
     image: chicken9,
+    off: '0',
     ingredients: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
@@ -105,6 +113,7 @@ const CHICKEN = [
     price: '19.99',
     rate: '3.2',
     image: chicken1,
+    off: '20',
     ingredients: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
