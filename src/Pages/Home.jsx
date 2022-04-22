@@ -1,10 +1,10 @@
 import React from 'react'
 
 //Components
-import CategorySlider from '../Components/CategorySlider/CategorySlider'
+import Header from '../Layout/Header'
 import Hero from '../Components/Hero/Hero'
 import Services from '../Components/Services/Services'
-import Header from '../Layout/Header'
+import OffRecipes from '../Components/OffRecipes/OffRecipes'
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
     <Header />
     <Hero/>
     <Services />
-    <CategorySlider />
+    <OffRecipes />
   </>
     
 

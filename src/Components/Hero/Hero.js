@@ -21,7 +21,6 @@ const Hero = () => {
   const [prev, setPrev] = useState({ index: '', dir: '' });
 
   const [isAnimate, setIsAnimate] = useState(false);
-  console.log(isAnimate);
 
   //Functions
   //main function for rotate
@@ -30,7 +29,6 @@ const Hero = () => {
     setPrev({ index: current, dir: dir });
     setNext({ index: index, dir: dir });
     setCurrent(index);
-    console.log(index, dir);
   };
 
   const goStep = (dir) => {

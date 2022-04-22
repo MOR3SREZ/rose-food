@@ -14,7 +14,7 @@ import DRINK from './utils/drink';
 import VEGETARIAN from './utils/vegetarian';
 import PASTA from './utils/pasta';
 
-let allProduct = [
+export const allProduct = [
   ...PIZZA,
   ...CHICKEN,
   ...PASTA,
