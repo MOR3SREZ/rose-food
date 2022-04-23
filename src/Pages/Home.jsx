@@ -6,6 +6,7 @@ import Hero from '../Components/Hero/Hero';
 import Services from '../Components/Services/Services';
 import SpacialFoods from '../Components/SpacialFoods/SpacialFoods';
 import Discount from '../Components/Discount/Discount';
+import Footer from '../Layout/Footer/Footer';
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Services />
       <SpacialFoods />
       <Discount />
+      <Footer />
     </>
   );
 };

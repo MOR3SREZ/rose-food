@@ -1,62 +1,35 @@
-nav{
+nav {
   width: 100%;
-  padding:0.5rem 4rem;
+  padding: 0.5rem 4rem;
   box-sizing: border-box;
   position: fixed;
-  background: rgba( 255, 255, 255, 0 );
-  backdrop-filter: blur( 8px );
-  -webkit-backdrop-filter: blur( 8px );
-  -moz-backdrop-filter: blur( 8px );
-  border: 1px solid rgba( 255, 255, 255, 0.1 );
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  -moz-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 100;
 }
 
-.logo{
-flex: 3;
-display: flex;
-flex-direction: row;
-align-items: center;
+.nav-links {
+  flex: 4;
 }
-.logo-name h1{
-  font-size: 2rem;
-  font-family: var(--logo-font);
-  font-weight: 900;
-  padding: 0;
-  margin: 0;
-  color: var(--primary-black);
-}
-
-.logo-svg{
-  width: 50px;
-  height: 50px;
-}
-.logo-svg svg{
-  width: 100%;
-  height: 100%;
-
-}
-
-.nav-links{
-flex: 4;
-}
-.nav-links ul{
+.nav-links ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
 }
-.nav-links li{
+.nav-links li {
   margin: 0rem 1rem;
   padding: 5px 15px;
   border-radius: 20rem;
   font-weight: 500;
 }
-.nav-links li a{
+.nav-links li a {
   color: var(--primary-black);
-
 }
 
 .cart {
@@ -72,7 +45,7 @@ flex: 4;
   position: relative;
 }
 
-.cart-counter{
+.cart-counter {
   position: absolute;
   top: -10%;
   right: -15%;
@@ -87,5 +60,4 @@ flex: 4;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }

@@ -1,15 +1,15 @@
 .discount {
-  height: 100vh;
+  height: 90vh;
   padding: 2rem;
 }
 
 .main-container {
-  height: 80%;
+  height: 90%;
   width: 80%;
   background-color: var(--primary-black);
   color: white;
   border-radius: 1rem;
-  margin: 3rem auto 0rem;
+  margin: 2rem auto 0rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
