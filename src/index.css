@@ -3,25 +3,27 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  --primary-red:  #fe734e;
+}
+.App {
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  --primary-red: #fe734e;
   --primary-black: #292821;
   --primary-orange: #ffb81a;
-  --primary-gray:rgb(150, 150, 150);
+  --primary-gray: rgb(150, 150, 150);
 
   /* #F5DCDC , #F5F0DC, #F6F6F6 , #DCF5E3 , #DCDEF5*/
   /* #fec6b8 ,#daa633 , #292821 , #fe724c , #fe734e*/
   /*#ffb81a, #fe734e */
 
-  --logo-font:  'Rubik Moonrocks';
+  --logo-font: 'Rubik Moonrocks';
   --primary-font: 'Poppins';
 }
-.App{
-  height: 100%;
-  box-sizing: border-box;
-  overflow: hidden;
-  font-family: 'Poppins', sans-serif;
+p {
+  font-family: var(--primary-font) !important;
 }
-
 a {
   text-decoration: none;
 }
@@ -29,6 +31,3 @@ a {
 ul {
   list-style-type: none;
 }
-
-
-

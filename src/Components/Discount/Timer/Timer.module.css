@@ -1,0 +1,35 @@
+.countdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* border: 1px solid white; */
+  padding: 1rem;
+  width: 275px;
+  height: 250px;
+  margin: 0rem auto;
+}
+
+.top,
+.bottom {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.top span,
+.bottom span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  color: var(--primary-orange);
+  font-size: 2.5rem;
+}
+
+span small {
+  color: rgb(230, 230, 230);
+  font-size: 1.2rem;
+}

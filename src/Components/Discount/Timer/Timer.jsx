@@ -1,4 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import { useState } from 'react';
+
+//styles
+import styles from './Timer.module.css';
 
 const Timer = () => {
   const [day, setDay] = useState(0);
@@ -24,11 +27,23 @@ const Timer = () => {
   setInterval(countdown, 1000);
 
   return (
-    <div>
-      <p>{day}day</p>
-      <p>{hour < 10 ? '0' + hour : hour}hour</p>
-      <p>{minute < 10 ? '0' + minute : minute}minute</p>
-      <p>{second < 10 ? '0' + second : second}seconde</p>
+    <div className={styles.countdown}>
+      <div className={styles.top}>
+        <span>
+          {day} <small>Day</small>
+        </span>
+        <span>
+          {hour < 10 ? '0' + hour : hour} <small>Hour</small>
+        </span>
+      </div>
+      <div className={styles.bottom}>
+        <span>
+          {minute < 10 ? '0' + minute : minute} <small>Minute</small>
+        </span>
+        <span>
+          {second < 10 ? '0' + second : second} <small>Second</small>
+        </span>
+      </div>
     </div>
   );
 };
