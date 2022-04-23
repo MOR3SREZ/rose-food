@@ -22,99 +22,103 @@ const variants = {
   },
 };
 
-
-const Card = ({food}) => {
+const Card = ({ food }) => {
   const [isHover, setHovered] = useState(false);
   const [imgIsHover, setImgHovered] = useState(false);
 
   //Calc off price
   const price = food.price;
-  const offPrice = (price * (+food.off) )/ 100;
+  const offPrice = (price * +food.off) / 100;
   const finalPrice = price - offPrice;
 
-  
-console.log('finalprice', finalPrice)
   return (
+    <motion.div
+      className={styles.card}
+      onHoverStart={() => setHovered(true)}
+      onHoverEnd={() => setHovered(false)}
+    >
       <motion.div
-        className={styles.card}
-        onHoverStart={() => setHovered(true)}
-        onHoverEnd={() => setHovered(false)}
+        className={styles['image-container']}
+        onHoverStart={() => setImgHovered(true)}
+        onHoverEnd={() => setImgHovered(false)}
       >
-        <motion.div
-          className={styles['image-container']}
-          onHoverStart={() => setImgHovered(true)}
-          onHoverEnd={() => setImgHovered(false)}
-        >
-          <motion.img
-            alt='some shit'
-            src={food.image}
-            animate={isHover ? 'end' : ''}
-            transition={{ ease: 'easeInOut' }}
-            variants={variants}
-          />
-          <motion.div
-            className={styles.overlay}
-          >
-            <div className={styles.icons}>
-              <motion.div
-                className={`${styles.icon} ${styles.favorite}`}
-                initial={{ x: 0, opacity: 0 }}
-                animate={imgIsHover ? { x: '65px', opacity: 1 } : {}}
-                transition={{ ease: 'easeInOut' }}
-                whileTap={{ scale: 0.9 }}
-                whileHover={{ backgroundColor: '#ffb81a' }}
-              >
-               <Favorite />
-              </motion.div>
-              <motion.div
-                className={`${styles.icon} ${styles.basket}`}
-                initial={{ opacity: 0, x: 0 }}
-                animate={imgIsHover ? { opacity: 1, x: 0 } : {}}
-                transition={{ ease: 'easeInOut' }}
-                whileTap={{ scale: 0.9 }}
-                whileHover={{ backgroundColor: '#ffb81a' }}
-              >
-                <Basket />
-              </motion.div>
-              <motion.div
-                className={`${styles.icon} ${styles.watch}`}
-                initial={{ x: 0, opacity: 0 }}
-                animate={imgIsHover ? { x: '-65px', opacity: 1 } : {}}
-                transition={{ ease: 'easeInOut' }}
-                whileTap={{ scale: 0.9 }}
-                whileHover={{ backgroundColor: '#ffb81a' }}
-              >
-                <Watch />
-              </motion.div>
-            </div>
-          </motion.div>
-          {food.off >0 &&<span className={styles.off}>-{food.off}%</span>}
-        </motion.div>
-        <div className={styles['detail-container']}>
-          {/*todo link ti the product id  */}
-          <motion.p className={styles['product-name']}
-            whileHover={{color:'var(--primary-red)'}}
-            transition={{duration:0.3}}
-          >{food.title}</motion.p>
-         <div className={styles["price-rate"]}>
-          <p className={styles['product-price']}> 
-           {
-             +finalPrice !== +price ?
-             <> 
-             <span className={styles['final-price']}>{` $${finalPrice.toFixed(1)+0} USD`}</span>
-              <span className={styles['old-price']}>{`$${price} USD`}</span></>
-               :
-               <span className={styles['final-price']}>{` $${food.price} USD`}</span>
-           }
-           </p>
-           <p className={styles['recipe-rate']}>
-             <span className={styles.star}><Star /></span>
-             <span className={styles.rate}>{food.rate}</span>
-           </p>
+        <motion.img
+          alt='some shit'
+          src={food.image}
+          animate={isHover ? 'end' : ''}
+          transition={{ ease: 'easeInOut' }}
+          variants={variants}
+        />
+        <motion.div className={styles.overlay}>
+          <div className={styles.icons}>
+            <motion.div
+              className={`${styles.icon} ${styles.favorite}`}
+              initial={{ x: 0, opacity: 0 }}
+              animate={imgIsHover ? { x: '65px', opacity: 1 } : {}}
+              transition={{ ease: 'easeInOut' }}
+              whileTap={{ scale: 0.9 }}
+              whileHover={{ backgroundColor: '#ffb81a' }}
+            >
+              <Favorite />
+            </motion.div>
+            <motion.div
+              className={`${styles.icon} ${styles.basket}`}
+              initial={{ opacity: 0, x: 0 }}
+              animate={imgIsHover ? { opacity: 1, x: 0 } : {}}
+              transition={{ ease: 'easeInOut' }}
+              whileTap={{ scale: 0.9 }}
+              whileHover={{ backgroundColor: '#ffb81a' }}
+            >
+              <Basket />
+            </motion.div>
+            <motion.div
+              className={`${styles.icon} ${styles.watch}`}
+              initial={{ x: 0, opacity: 0 }}
+              animate={imgIsHover ? { x: '-65px', opacity: 1 } : {}}
+              transition={{ ease: 'easeInOut' }}
+              whileTap={{ scale: 0.9 }}
+              whileHover={{ backgroundColor: '#ffb81a' }}
+            >
+              <Watch />
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
+        {food.off > 0 && <span className={styles.off}>-{food.off}%</span>}
       </motion.div>
+      <div className={styles['detail-container']}>
+        {/*todo link ti the product id  */}
+        <motion.p
+          className={styles['product-name']}
+          whileHover={{ color: 'var(--primary-red)' }}
+          transition={{ duration: 0.3 }}
+        >
+          {food.title}
+        </motion.p>
+        <div className={styles['price-rate']}>
+          <p className={styles['product-price']}>
+            {+finalPrice !== +price ? (
+              <>
+                <span className={styles['final-price']}>{` $${
+                  finalPrice.toFixed(1) + 0
+                } USD`}</span>
+                <span className={styles['old-price']}>{`$${price} USD`}</span>
+              </>
+            ) : (
+              <span
+                className={styles['final-price']}
+              >{` $${food.price} USD`}</span>
+            )}
+          </p>
+          <p className={styles['recipe-rate']}>
+            <span className={styles.star}>
+              <Star />
+            </span>
+            <span className={styles.rate}>{food.rate}</span>
+          </p>
+        </div>
+      </div>
+    </motion.div>
   );
-}
+};
 
-export default Card
+export default Card;

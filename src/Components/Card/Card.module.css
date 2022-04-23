@@ -1,7 +1,7 @@
-.card{
-  width:300px;
+.card {
+  width: 300px;
   min-width: 300px;
-  height:500px;
+  height: 500px;
   background-color: white;
   border-radius: 8px;
   overflow: hidden;
@@ -11,7 +11,7 @@
   margin: 1rem 1rem;
 }
 
-.image-container{
+.image-container {
   width: 100%;
   height: 75%;
   position: relative;
@@ -21,7 +21,7 @@
   overflow: hidden;
 }
 
-.off{
+.off {
   z-index: 5;
   position: absolute;
   top: 5px;
@@ -36,20 +36,20 @@
   color: #fff;
 }
 
-.image-container img{
+.image-container img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   pointer-events: none;
 }
-.overlay{
+.overlay {
   position: absolute;
   bottom: 5px;
   height: 50px;
   width: 250px;
 }
 
-.icons{
+.icons {
   position: relative;
   width: 100%;
   height: 100%;
@@ -57,27 +57,27 @@
   align-items: center;
   justify-content: center;
 }
-.icon{
- position: absolute;
- cursor: pointer;
- width: 40px;
- height: 40px;
- border-radius: 50%;
- background: rgba( 255, 255, 255, 0.6 );
-  backdrop-filter: blur( 8px );
-  -webkit-backdrop-filter: blur( 8px );
-  -moz-backdrop-filter: blur( 8px );
-  border: 1px solid rgba( 255, 255, 255, 0.5 );
- display: flex;
- align-items: center;
- justify-content: center;
+.icon {
+  position: absolute;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  -moz-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.icon svg{
+.icon svg {
   width: 50%;
   height: 50%;
 }
 
-.detail-container{
+.detail-container {
   max-width: 100%;
   height: 25%;
   padding: 10px;
@@ -86,16 +86,16 @@
   align-items: center;
   justify-content: space-between;
 }
-.product-name{
-  font-family: var(--primary-font)!important;
+.product-name {
+  font-family: var(--primary-font) !important;
   font-size: 1.1rem;
   color: var(--primary-black);
-  margin: 0!important;
+  margin: 0 !important;
   cursor: pointer;
   text-align: center;
 }
 
-.price-rate{
+.price-rate {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -104,41 +104,40 @@
   padding: 0rem 0.5rem;
 }
 
-.recipe-rate{
-  font-family: var(--primary-font)!important;
+.recipe-rate {
+  font-family: var(--primary-font) !important;
   width: 30%;
   height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.recipe-rate .star{
+.recipe-rate .star {
   display: block;
   width: 20px;
 }
-.recipe-rate .star svg{
+.recipe-rate .star svg {
   width: 100%;
   height: 100%;
 }
-.recipe-rate .rate{
+.recipe-rate .rate {
   display: block;
-  padding-left:5px ;
+  padding-left: 5px;
   font-weight: 500;
 }
 
-.product-price{
+.product-price {
   width: max-content;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  font-family: var(--primary-font)!important;
+  font-family: var(--primary-font) !important;
   font-weight: 500;
 }
-.final-price{
-
+.final-price {
 }
 
-.old-price{
+.old-price {
   padding-left: 0.5rem;
   color: var(--primary-gray);
   text-decoration: line-through;

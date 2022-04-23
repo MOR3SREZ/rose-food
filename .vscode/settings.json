@@ -7,5 +7,6 @@
     "Quattro",
     "stagioni",
     "Variabels"
-  ]
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
