@@ -1,0 +1,5 @@
+.sort-bar {
+  height: 75px;
+  background-color: var(--primary-orange);
+  width: 100%;
+}

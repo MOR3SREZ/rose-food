@@ -29,7 +29,7 @@ const CategoryCard = ({ item }) => {
         transition={{ ease: 'easeInOut' }}
       >
         <h3>{item.name}</h3>
-        <p>12 item</p>
+        <p>{item.count} item</p>
       </motion.div>
     </motion.div>
   );

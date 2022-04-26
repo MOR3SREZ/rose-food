@@ -5,12 +5,18 @@ import styles from './CategorySection.module.css';
 
 //Components
 import CategoryCard from './CategoryCard/CategoryCard';
-import HeroPictures from '../../utils/HeroPictures';
+import CategoryList from '../../utils/category';
 
 const CategorySection = () => {
   return (
     <section>
-      {HeroPictures && HeroPictures.map((item) => <CategoryCard item={item} />)}
+      <h1>Category</h1>
+      <div className={styles.category}>
+        {CategoryList &&
+          CategoryList.map((item) => (
+            <CategoryCard item={item} key={item.id} />
+          ))}
+      </div>
     </section>
   );
 };

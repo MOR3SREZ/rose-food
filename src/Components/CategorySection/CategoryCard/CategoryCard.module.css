@@ -4,21 +4,26 @@
   position: relative;
   overflow: hidden;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .image-container {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   height: 100%;
 }
 
 .image-container img {
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .image-overlay {
   position: absolute;
-  background: rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   -moz-backdrop-filter: blur(8px);
@@ -28,7 +33,8 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  color: white;
+  color: var(--primary-black);
+  font-family: var(--logo-font);
   height: 50%;
   top: 50%;
 }

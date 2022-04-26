@@ -4,12 +4,16 @@ import React from 'react';
 import Header from '../Layout/Header';
 import Footer from '../Layout/Footer/Footer';
 import CategorySection from '../Components/CategorySection/CategorySection';
+import SortBar from '../Components/SortBar/SortBar';
+import MenuSection from '../Components/Menu/MenuSection';
 
 const Menu = () => {
   return (
     <>
       <Header />
       <CategorySection />
+      <SortBar />
+      <MenuSection />
       <Footer />
     </>
   );
