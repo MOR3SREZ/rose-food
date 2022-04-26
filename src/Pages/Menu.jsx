@@ -1,10 +1,18 @@
-import React from 'react'
-import Header from '../Layout/Header'
+import React from 'react';
+
+//Components
+import Header from '../Layout/Header';
+import Footer from '../Layout/Footer/Footer';
+import CategorySection from '../Components/CategorySection/CategorySection';
 
 const Menu = () => {
   return (
-    <div><Header /></div>
-  )
-}
+    <>
+      <Header />
+      <CategorySection />
+      <Footer />
+    </>
+  );
+};
 
-export default Menu
+export default Menu;

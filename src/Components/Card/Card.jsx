@@ -36,6 +36,7 @@ const Card = ({ food }) => {
       className={styles.card}
       onHoverStart={() => setHovered(true)}
       onHoverEnd={() => setHovered(false)}
+      key={food.id}
     >
       <motion.div
         className={styles['image-container']}

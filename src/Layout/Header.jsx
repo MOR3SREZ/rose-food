@@ -7,9 +7,8 @@ import styles from './Header.module.css';
 const Header = () => {
   return (
     <nav>
-      <Link to='/'>
-        <Logo />
-      </Link>
+      <Logo />
+
       <div className={styles['nav-links']}>
         <ul>
           <li>

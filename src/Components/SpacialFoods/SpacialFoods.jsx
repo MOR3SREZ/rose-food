@@ -5,17 +5,15 @@ import Slider from '../Slider/Slider';
 import styles from './SpacialFoods.module.css';
 
 const SpacialFoods = () => {
-  console.log('All', allProduct);
-
   //filtering discounted food
   let DiscountedFoods = allProduct
     .filter((food) => food.off > 0)
-    .map((item) => <Card food={item} />);
+    .map((item) => <Card food={item} key={Math.random()} />);
 
   //Filtering popular Foods
   let PopularFoods = allProduct
     .filter((food) => food.rate > 4.5)
-    .map((item) => <Card food={item} />);
+    .map((item) => <Card food={item} key={Math.random()} />);
 
   return (
     <section className={styles.recipe}>
