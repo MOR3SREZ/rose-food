@@ -9,7 +9,7 @@ import CategoryList from '../../utils/category';
 
 const CategorySection = () => {
   return (
-    <section>
+    <section className={styles['category-section']}>
       <h1>Category</h1>
       <div className={styles.category}>
         {CategoryList &&

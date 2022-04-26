@@ -18,7 +18,7 @@ const Slider = ({ item }) => {
   // useEffect(() => {
   //   console.log('x',slider.current.scrollWidth)
   // })
-
+  console.log('width', carousel);
   const goStep = (dir) => {
     trigger = trigger + dir * distance;
     controls.start({ x: trigger });
@@ -38,7 +38,7 @@ const Slider = ({ item }) => {
 
   useEffect(() => {
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-  }, []);
+  }, [width]);
 
   return (
     <motion.div className={styles.carousel} ref={carousel} key={Math.random()}>

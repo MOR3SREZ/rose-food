@@ -9,7 +9,7 @@ const CategoryCard = ({ item }) => {
 
   return (
     <motion.div
-      className={styles.card}
+      className={styles['category-card']}
       onHoverStart={() => setHovered(true)}
       onHoverEnd={() => setHovered(false)}
       key={item.id}

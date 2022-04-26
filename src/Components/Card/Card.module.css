@@ -124,7 +124,7 @@
   display: block;
   padding-left: 5px;
   font-size: 0.9rem;
-  /* font-weight: 500; */
+  font-weight: 500;
 }
 
 .product-price {
@@ -133,7 +133,7 @@
   align-items: baseline;
   justify-content: space-between;
   font-family: var(--primary-font) !important;
-  /* font-weight: 500; */
+  font-weight: 500;
 }
 .final-price {
   font-size: 0.9rem;

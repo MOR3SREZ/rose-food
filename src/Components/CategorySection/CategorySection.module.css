@@ -1,4 +1,4 @@
-section {
+.category-section {
   padding-top: 5rem;
   height: 50vh;
   width: 100%;
@@ -6,8 +6,6 @@ section {
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-}
-h1 {
 }
 
 .category {
