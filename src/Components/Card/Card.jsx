@@ -9,6 +9,7 @@ import Favorite from '../../assets/icons/Favorite';
 import Basket from '../../assets/icons/Basket';
 import Watch from '../../assets/icons/Watch';
 import Star from '../../assets/icons/Star';
+import { Link } from 'react-router-dom';
 
 const variants = {
   start: {
@@ -57,7 +58,6 @@ const Card = ({ food }) => {
               initial={{ x: 0, opacity: 0 }}
               animate={imgIsHover ? { x: '65px', opacity: 1 } : {}}
               transition={{ ease: 'easeInOut' }}
-              whileTap={{ scale: 0.9 }}
               whileHover={{ backgroundColor: '#ffb81a' }}
             >
               <Favorite />
@@ -67,34 +67,36 @@ const Card = ({ food }) => {
               initial={{ opacity: 0, x: 0 }}
               animate={imgIsHover ? { opacity: 1, x: 0 } : {}}
               transition={{ ease: 'easeInOut' }}
-              whileTap={{ scale: 0.9 }}
               whileHover={{ backgroundColor: '#ffb81a' }}
             >
               <Basket />
             </motion.div>
+
             <motion.div
               className={`${styles.icon} ${styles.watch}`}
               initial={{ x: 0, opacity: 0 }}
               animate={imgIsHover ? { x: '-65px', opacity: 1 } : {}}
               transition={{ ease: 'easeInOut' }}
-              whileTap={{ scale: 0.9 }}
               whileHover={{ backgroundColor: '#ffb81a' }}
             >
-              <Watch />
+              <Link to={`/product/${food.id}`}>
+                <Watch />
+              </Link>
             </motion.div>
           </div>
         </motion.div>
         {food.off > 0 && <div className={styles.off}>-{food.off}%</div>}
       </motion.div>
       <div className={styles['detail-container']}>
-        {/*todo link ti the product id  */}
-        <motion.p
-          className={styles['product-name']}
-          whileHover={{ color: 'var(--primary-red)' }}
-          transition={{ duration: 0.3 }}
-        >
-          {food.title}
-        </motion.p>
+        <Link to={`/product/${food.id}`}>
+          <motion.p
+            className={styles['product-name']}
+            whileHover={{ color: 'var(--primary-red)' }}
+            transition={{ duration: 0.3 }}
+          >
+            {food.title}
+          </motion.p>
+        </Link>
         <div className={styles['price-rate']}>
           <p className={styles['product-price']}>
             {+finalPrice !== +price ? (

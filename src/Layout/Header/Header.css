@@ -31,6 +31,9 @@ nav {
 .nav-links li a {
   color: var(--primary-black);
 }
+.nav-links li a.active {
+  color: var(--primary-red);
+}
 
 .cart {
   flex: 1;

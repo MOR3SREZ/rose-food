@@ -13,6 +13,7 @@ import STEAK from './utils/steak';
 import DRINK from './utils/drink';
 import VEGETARIAN from './utils/vegetarian';
 import PASTA from './utils/pasta';
+import Product from './Pages/Product';
 
 export const allProduct = [
   ...PASTA,
@@ -32,6 +33,7 @@ function App() {
           <Route path='/menu' element={<Menu />} />
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<Signup />} />
+          <Route path='/product/:id' element={<Product />} />
         </Routes>
       </BrowserRouter>
     </div>

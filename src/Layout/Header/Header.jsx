@@ -1,15 +1,15 @@
-import { Link, NavLink } from 'react-router-dom';
-import CartBasket from '../assets/icons/CartBasket';
-import Logo from '../Components/Logo/Logo';
+import { NavLink } from 'react-router-dom';
+import CartBasket from '../../assets/icons/CartBasket';
+import Logo from '../../Components/Logo/Logo';
 
-import styles from './Header.module.css';
+import './Header.css';
 
 const Header = () => {
   return (
     <nav>
       <Logo />
 
-      <div className={styles['nav-links']}>
+      <div className='nav-links'>
         <ul>
           <li>
             <NavLink to='/'>Home</NavLink>
@@ -25,9 +25,9 @@ const Header = () => {
           </li>
         </ul>
       </div>
-      <div className={styles.cart}>
+      <div className='cart'>
         <CartBasket />
-        <div className={styles['cart-counter']}>7</div>
+        <div className='cart-counter'>7</div>
       </div>
     </nav>
   );

@@ -21,7 +21,7 @@
   width: 100%;
   height: 100%;
 }
-a {
+.logo a {
   display: inline-flex;
   align-items: center;
 }

@@ -27,6 +27,12 @@ p {
 }
 a {
   text-decoration: none;
+  color: var(--primary-black);
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%; */
 }
 
 ul {
