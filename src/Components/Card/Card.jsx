@@ -84,7 +84,7 @@ const Card = ({ food }) => {
             </motion.div>
           </div>
         </motion.div>
-        {food.off > 0 && <span className={styles.off}>-{food.off}%</span>}
+        {food.off > 0 && <div className={styles.off}>-{food.off}%</div>}
       </motion.div>
       <div className={styles['detail-container']}>
         {/*todo link ti the product id  */}

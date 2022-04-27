@@ -23,6 +23,7 @@
 }
 p {
   font-family: var(--primary-font) !important;
+  margin: 0 !important;
 }
 a {
   text-decoration: none;
