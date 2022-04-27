@@ -2,4 +2,9 @@
   height: 75px;
   background-color: var(--primary-orange);
   width: 100%;
+  padding: 0rem 4rem;
+  /* border-radius: 2rem; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

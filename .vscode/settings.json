@@ -8,5 +8,6 @@
     "stagioni",
     "Variabels"
   ],
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "reactSnippets.settings.importReactOnTop": false
 }

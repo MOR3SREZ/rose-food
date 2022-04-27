@@ -37,6 +37,18 @@ const PASTA = [
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus sed quae at asperiores perspiciatis culpa animi optio corporis dolorum? Quidem at explicabo voluptatem dolores voluptatibus earum voluptas iste! Iste, quia ab dolorem sunt minima earum.',
   },
+  {
+    id: 'p3',
+    title: 'Creamy Lemon Zucchini Pasta',
+    category: 'pasta',
+    price: '16.99',
+    rate: '4.2',
+    image: pasta3,
+    off: '0',
+    ingredients: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'],
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
+  },
 
   {
     id: 'p4',

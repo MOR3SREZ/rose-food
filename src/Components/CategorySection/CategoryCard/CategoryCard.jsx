@@ -1,11 +1,30 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
 //styles
 import styles from './CategoryCard.module.css';
 
-const CategoryCard = ({ item }) => {
+const CategoryCard = ({ item, setSelected, selected }) => {
   const [isHover, setHovered] = useState(false);
+
+  const [img, setImg] = useState('');
+  const [content, setContent] = useState('');
+
+  useEffect(() => {
+    if (isHover) {
+      setImg();
+      setContent({ y: '0%' });
+    } else if (!isHover) {
+      setImg({ rotate: '0deg' });
+      setContent({ y: '100%' });
+    }
+  }, [isHover]);
+
+  const selectHandler = () => {
+    if (selected === item.name) {
+      setSelected('');
+    } else setSelected(item.name);
+  };
 
   return (
     <motion.div
@@ -13,10 +32,27 @@ const CategoryCard = ({ item }) => {
       onHoverStart={() => setHovered(true)}
       onHoverEnd={() => setHovered(false)}
       key={item.id}
+      onClick={() => selectHandler()}
+      animate={
+        selected === item.name
+          ? {
+              width: '200px',
+              height: '200px',
+              border: '2px solid var(--primary-orange)',
+            }
+          : {}
+      }
+      transition={{ ease: 'easeInOut' }}
     >
       <div className={styles['image-container']}>
         <motion.img
-          animate={isHover ? { rotate: '1turn' } : { rotate: '0turn' }}
+          animate={
+            isHover
+              ? { rotate: '360deg' }
+              : selected === item.name
+              ? { rotate: '360deg' }
+              : { rotate: '0deg' }
+          }
           transition={{ duration: 0.75 }}
           src={item.image}
           alt='shit'
@@ -25,7 +61,13 @@ const CategoryCard = ({ item }) => {
       <motion.div
         className={styles['image-overlay']}
         initial={{ y: '100%' }}
-        animate={isHover ? { y: '0%' } : { y: '100%' }}
+        animate={
+          isHover
+            ? { y: '0%' }
+            : selected === item.name
+            ? { y: '0%' }
+            : { y: '100%' }
+        }
         transition={{ ease: 'easeInOut' }}
       >
         <h3>{item.name}</h3>

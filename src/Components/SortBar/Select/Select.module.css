@@ -1,0 +1,70 @@
+.dropdown {
+  width: 250px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+}
+
+.dropdown-btn {
+  width: max-content;
+  min-width: 150px;
+  padding: 0rem 1rem;
+  padding-left: 1rem;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  position: relative;
+}
+.arrow {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 12px;
+  right: 3%;
+  top: 0;
+}
+.arrow svg {
+  width: 100%;
+}
+
+.dropdown-btn p {
+  font-size: 0.8rem;
+  padding-right: 1rem;
+}
+
+.dropdown-content {
+  z-index: 10;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.content-item {
+  padding: 0.5rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.content-item p {
+  font-size: 0.9rem;
+  color: var(--primary-black);
+}

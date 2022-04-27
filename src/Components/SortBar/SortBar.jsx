@@ -1,12 +1,13 @@
 //styles
 import Search from './Search/Search';
+import Select from './Select/Select';
 import styles from './SortBar.module.css';
 
 const SortBar = () => {
   return (
     <div className={styles['sort-bar']}>
       <Search />
-      <div className={styles['sort-by']}></div>
+      <Select />
     </div>
   );
 };
