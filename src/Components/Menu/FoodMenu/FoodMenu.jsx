@@ -11,7 +11,7 @@ import styles from './FoodMenu.module.css';
 const FoodMenu = () => {
   const [pageNumber, setPageNumber] = useState(0);
 
-  const foodPerPage = 10;
+  const foodPerPage = 16;
   const pageVisited = pageNumber * foodPerPage;
 
   const displayFoods = allProduct

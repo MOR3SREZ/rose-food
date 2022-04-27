@@ -1,8 +1,6 @@
 .food-menu {
-  width: 80%;
+  width: 100%;
   height: auto;
-  /* background-color: var(--primary-black); */
-  /* color: white; */
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -14,7 +12,7 @@
   justify-content: center;
   flex-wrap: wrap;
   height: 100%;
-  margin: 2rem 0rem;
+  margin: 4rem 0rem 2rem;
 }
 .paginate {
   height: 75px;
@@ -22,9 +20,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all ease 0.5s;
 }
 .pagination-btn {
-  width: 60%;
+  width: max-content;
   list-style: none;
   display: flex;
   flex-direction: row;

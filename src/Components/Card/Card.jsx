@@ -101,13 +101,13 @@ const Card = ({ food }) => {
               <>
                 <span className={styles['final-price']}>{` $${
                   finalPrice.toFixed(1) + 0
-                } `}</span>
-                <span className={styles['old-price']}>{`$${price} `}</span>
+                } USD`}</span>
+                <span className={styles['old-price']}>{`$${price} USD`}</span>
               </>
             ) : (
               <span
                 className={styles['final-price']}
-              >{` $${food.price} `}</span>
+              >{` $${food.price} USD`}</span>
             )}
           </p>
           <p className={styles['recipe-rate']}>
