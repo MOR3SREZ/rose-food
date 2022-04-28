@@ -1,5 +1,6 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import CartBasket from '../../assets/icons/CartBasket';
+import Favorite from '../../assets/icons/Favorite';
 import Logo from '../../Components/Logo/Logo';
 
 import './Header.css';
@@ -26,8 +27,16 @@ const Header = () => {
         </ul>
       </div>
       <div className='cart'>
-        <CartBasket />
-        <div className='cart-counter'>7</div>
+        <Link to={'/cart'}>
+          <CartBasket color={'var(--primary-black)'} />
+          <div className='cart-counter'>7</div>
+        </Link>
+      </div>
+      <div className='favorite'>
+        <Link to={'/favorite'}>
+          <Favorite color={'var(--primary-black)'} />
+          <div className='favorite-counter'>7</div>
+        </Link>
       </div>
     </nav>
   );
