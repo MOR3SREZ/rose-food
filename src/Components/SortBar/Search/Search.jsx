@@ -1,24 +1,30 @@
-import { useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import { useDispatch } from 'react-redux';
 
 //styles
 import styles from './Search.module.css';
 //components
 import SearchIcon from '../../../assets/icons/Search';
+import { filterActions } from '../../../Store/filter-slice';
 
 const Search = () => {
   const [input, setInput] = useState('');
-  const inputValue = useRef();
 
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(filterActions.searchFilter(input));
+  }, [input]);
+
+  //i can't forward input in store and in the same time set is to ''
   const submitHandler = (e) => {
     e.preventDefault();
-    setInput(inputValue.current.value);
-    inputValue.current.value = '';
+    // setInput('');
   };
 
-  console.log('input', input);
   return (
-    <form className={styles['search-input']} onSubmit={(e) => submitHandler(e)}>
+    <form className={styles['search-input']} onSubmit={submitHandler}>
       <div className={styles.wrapper}>
         <motion.input
           layout
@@ -26,7 +32,8 @@ const Search = () => {
           name='search'
           placeholder='Search Products'
           whileFocus={{ scaleX: 1.02 }}
-          ref={inputValue}
+          onChange={(e) => setInput(e.target.value)}
+          value={input}
         />
         <button className={styles.icon} type='submit'>
           <SearchIcon />

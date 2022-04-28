@@ -1,14 +1,12 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { filterActions } from '../../../Store/filter-slice';
 
 //styles
 import styles from './Select.module.css';
 
 const sortOptions = [
-  {
-    id: 'none',
-    text: 'Featured',
-  },
   {
     id: 'pLow',
     text: 'Price: Low to High',
@@ -18,8 +16,12 @@ const sortOptions = [
     text: 'Price: High to Low',
   },
   {
-    id: 'rev',
-    text: 'Avg. Customer Review',
+    id: 'rLow',
+    text: 'Review: Low to High',
+  },
+  {
+    id: 'rHigh',
+    text: 'Review: High to Low',
   },
 ];
 
@@ -27,10 +29,12 @@ const Select = () => {
   const [selected, setSelected] = useState('');
   const [open, setOpen] = useState(false);
 
+  const dispatch = useDispatch();
+
   const clickHandler = (e, id) => {
     setSelected(e.target.textContent);
     setOpen(false);
-    //id for sorting Foods
+    dispatch(filterActions.sortByFilter(id));
   };
 
   useEffect(() => {

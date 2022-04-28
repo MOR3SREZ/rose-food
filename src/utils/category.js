@@ -26,7 +26,7 @@ const CategoryList = [
   },
   {
     id: 'cat4',
-    name: 'Vegan',
+    name: 'Vegetarian',
     image: vegetarian,
     count: 12,
   },

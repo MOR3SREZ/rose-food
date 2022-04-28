@@ -14,7 +14,7 @@ import pasta12 from '../assets/pasta/Weeknight Steak.jpg';
 
 const PASTA = [
   {
-    id: 'p1',
+    id: 'pa1',
     title: 'Broccoli Bolognese',
     category: 'pasta',
     price: '17.13',
@@ -26,7 +26,7 @@ const PASTA = [
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur doloribus rerum minus nostrum fugiat quibusdam! Ea atque ut quasi cum ex adipisci distinctio quidem autem. Excepturi, quia iste nihil eum provident mollitia tempora voluptate ad.',
   },
   {
-    id: 'p2',
+    id: 'pa2',
     title: 'Cold Sesame ',
     category: 'pasta',
     price: '13.00',
@@ -38,7 +38,7 @@ const PASTA = [
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus sed quae at asperiores perspiciatis culpa animi optio corporis dolorum? Quidem at explicabo voluptatem dolores voluptatibus earum voluptas iste! Iste, quia ab dolorem sunt minima earum.',
   },
   {
-    id: 'p3',
+    id: 'pa3',
     title: 'Creamy Lemon Zucchini Pasta',
     category: 'pasta',
     price: '16.99',
@@ -51,7 +51,7 @@ const PASTA = [
   },
 
   {
-    id: 'p4',
+    id: 'pa4',
     title: 'Herbed Fresh Pasta',
     category: 'pasta',
     price: '14.10',
@@ -63,7 +63,7 @@ const PASTA = [
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
   },
   {
-    id: 'p5',
+    id: 'pa5',
     title: 'Linguine',
     category: 'pasta',
     price: '17.00',
@@ -75,7 +75,7 @@ const PASTA = [
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
   },
   {
-    id: 'p6',
+    id: 'pa6',
     title: 'Pantry Pasta',
     category: 'pasta',
     price: '15.33',
@@ -87,7 +87,7 @@ const PASTA = [
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
   },
   {
-    id: 'p7',
+    id: 'pa7',
     title: 'Pasta With Lentils and Mushrooms',
     category: 'pasta',
     price: '18.00',
@@ -99,7 +99,7 @@ const PASTA = [
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
   },
   {
-    id: 'p8',
+    id: 'pa8',
     title: 'Rigatoni With Fennel',
     category: 'pasta',
     price: '13.00',
@@ -111,7 +111,7 @@ const PASTA = [
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
   },
   {
-    id: 'p9',
+    id: 'pa9',
     title: 'Spicy Pasta with Shrimp',
     category: 'pasta',
     price: '19.99',
@@ -123,7 +123,7 @@ const PASTA = [
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
   },
   {
-    id: 'p10',
+    id: 'pa10',
     title: 'Springy Ricotta Gnocchi',
     category: 'pasta',
     price: '17.66',
@@ -135,7 +135,7 @@ const PASTA = [
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
   },
   {
-    id: 'p11',
+    id: 'pa11',
     title: 'Turkey Etcetrazzini',
     category: 'pasta',
     price: '18.25',
@@ -147,7 +147,7 @@ const PASTA = [
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laudantium ad commodi quidem dolore fugit voluptatem quia saepe facilis dignissimos illo magni tenetur vel voluptate, minima harum ipsum nihil error quod voluptatum nam quas nisi.',
   },
   {
-    id: 'p12',
+    id: 'pa12',
     title: 'Weeknight Steak',
     category: 'pasta',
     price: '15.00',

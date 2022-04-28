@@ -1,15 +1,21 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import CategoryList from '../../utils/category';
+import { useDispatch } from 'react-redux';
+import { filterActions } from '../../Store/filter-slice';
 
 //styles
 import styles from './CategorySection.module.css';
 
 //Components
 import CategoryCard from './CategoryCard/CategoryCard';
-import CategoryList from '../../utils/category';
 
 const CategorySection = () => {
   const [selected, setSelected] = useState('');
-  console.log('selected', selected);
+
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(filterActions.categoryFilter(selected));
+  }, [selected]);
 
   return (
     <section className={styles['category-section']}>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 //styles
@@ -6,19 +6,6 @@ import styles from './CategoryCard.module.css';
 
 const CategoryCard = ({ item, setSelected, selected }) => {
   const [isHover, setHovered] = useState(false);
-
-  const [img, setImg] = useState('');
-  const [content, setContent] = useState('');
-
-  useEffect(() => {
-    if (isHover) {
-      setImg();
-      setContent({ y: '0%' });
-    } else if (!isHover) {
-      setImg({ rotate: '0deg' });
-      setContent({ y: '100%' });
-    }
-  }, [isHover]);
 
   const selectHandler = () => {
     if (selected === item.name) {
