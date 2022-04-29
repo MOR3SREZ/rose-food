@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 //styles
 import styles from './Card.module.css';
@@ -10,6 +10,9 @@ import Basket from '../../assets/icons/Basket';
 import Watch from '../../assets/icons/Watch';
 import Star from '../../assets/icons/Star';
 import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { cartActions } from '../../Store/cart-slice';
+import { favoriteActions } from '../../Store/favorite-slice';
 
 const variants = {
   start: {
@@ -26,8 +29,53 @@ const variants = {
 const Card = ({ food }) => {
   const [isHover, setHovered] = useState(false);
   const [imgIsHover, setImgHovered] = useState(false);
+  const [toggleCart, setToggleCart] = useState(false);
+  const [toggleFavorite, setToggleFavorite] = useState(false);
 
-  //Calc off price
+  const cartItems = useSelector((state) => state.cart.cartItems);
+  const favoriteItems = useSelector((state) => state.favorite.favoriteItems);
+  const dispatch = useDispatch();
+
+  // to check if item is in listItem and dont lose it on rerender!!
+  //Check for Cart
+  useEffect(() => {
+    cartItems.map((item) => {
+      if (item.id === food.id) {
+        setToggleCart(true);
+        return null;
+      }
+    });
+  });
+
+  const cartClickHandler = () => {
+    if (toggleCart) {
+      dispatch(cartActions.removeFromCart(food.id));
+    } else if (!toggleCart) {
+      dispatch(cartActions.addToCart(food));
+    }
+    setToggleCart((prev) => !prev);
+  };
+
+  //Check for Favorite
+  useEffect(() => {
+    favoriteItems.map((item) => {
+      if (item.id === food.id) {
+        setToggleFavorite(true);
+        return null;
+      }
+    });
+  });
+
+  const favoriteClickHandler = () => {
+    if (toggleFavorite) {
+      dispatch(favoriteActions.removeFromFavorite(food));
+    } else if (!toggleFavorite) {
+      dispatch(favoriteActions.addToFavorite(food));
+    }
+    setToggleFavorite((prev) => !prev);
+  };
+
+  //Calc Discount of foods
   const price = food.price;
   const offPrice = (price * +food.off) / 100;
   const finalPrice = price - offPrice;
@@ -58,7 +106,11 @@ const Card = ({ food }) => {
               initial={{ x: 0, opacity: 0 }}
               animate={imgIsHover ? { x: '65px', opacity: 1 } : {}}
               transition={{ ease: 'easeInOut' }}
-              whileHover={{ backgroundColor: '#ffb81a' }}
+              whileHover={{ scale: 1.1 }}
+              onClick={favoriteClickHandler}
+              style={
+                toggleFavorite ? { backgroundColor: 'var(--primary-red)' } : {}
+              }
             >
               <Favorite />
             </motion.div>
@@ -67,7 +119,11 @@ const Card = ({ food }) => {
               initial={{ opacity: 0, x: 0 }}
               animate={imgIsHover ? { opacity: 1, x: 0 } : {}}
               transition={{ ease: 'easeInOut' }}
-              whileHover={{ backgroundColor: '#ffb81a' }}
+              whileHover={{ scale: 1.1 }}
+              onClick={cartClickHandler}
+              style={
+                toggleCart ? { backgroundColor: 'var(--primary-orange)' } : {}
+              }
             >
               <Basket />
             </motion.div>
@@ -77,7 +133,7 @@ const Card = ({ food }) => {
               initial={{ x: 0, opacity: 0 }}
               animate={imgIsHover ? { x: '-65px', opacity: 1 } : {}}
               transition={{ ease: 'easeInOut' }}
-              whileHover={{ backgroundColor: '#ffb81a' }}
+              whileHover={{ scale: 1.1 }}
             >
               <Link to={`/product/${food.id}`}>
                 <Watch />

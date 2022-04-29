@@ -18,6 +18,9 @@ const FoodMenu = () => {
   const sortByFilter = useSelector((state) => state.filter.sortBy);
   const searchFilter = useSelector((state) => state.filter.search);
 
+  const listItem = useSelector((state) => state.cart.listItems);
+  const favoriteItems = useSelector((state) => state.favorite.favoriteItems);
+
   //sorting Foods!
   useEffect(() => {
     if (sortByFilter === 'pLow') {
