@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import ReactPaginate from 'react-paginate';
 import { useSelector } from 'react-redux';
+import { allProduct } from '../../../App';
+import { motion } from 'framer-motion';
 
 //components
-import { allProduct } from '../../../App';
 import Card from '../../Card/Card';
 
 //styles
@@ -78,8 +79,10 @@ const FoodMenu = () => {
   };
 
   return (
-    <div className={styles['food-menu']}>
-      <div className={styles.foods}>{displayFoods}</div>
+    <motion.div layout className={styles['food-menu']}>
+      <motion.div layout className={styles.foods}>
+        {displayFoods}
+      </motion.div>
       <div className={styles.paginate}>
         {pageCount > 0 && (
           <ReactPaginate
@@ -95,7 +98,7 @@ const FoodMenu = () => {
           />
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

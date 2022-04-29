@@ -48,6 +48,9 @@ nav {
   justify-content: center;
   position: relative;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .cart a,
 .favorite a {
