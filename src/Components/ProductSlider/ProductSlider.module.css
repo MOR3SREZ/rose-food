@@ -1,0 +1,11 @@
+.slider-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 0rem;
+}
+
+.slider-item h3 {
+  font-size: 2rem;
+  color: var(--primary-black);
+}

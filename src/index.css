@@ -21,18 +21,14 @@
   --logo-font: 'Rubik Moonrocks';
   --primary-font: 'Poppins';
 }
-p {
+p,
+button {
   font-family: var(--primary-font) !important;
   margin: 0 !important;
 }
 a {
   text-decoration: none;
   color: var(--primary-black);
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%; */
 }
 
 ul {

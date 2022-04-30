@@ -11,7 +11,9 @@ const Discount = () => {
           <h2>Our Spacial Offer</h2>
           <div className={styles.timer}>
             <p>Discount End in:</p>
-            <Timer />
+            <div className={styles['timer-container']}>
+              <Timer />
+            </div>
           </div>
         </div>
         <div className={styles['discount-img']}>

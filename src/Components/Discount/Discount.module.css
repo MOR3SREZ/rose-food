@@ -41,6 +41,10 @@
   transform-origin: center;
   top: 3%;
 }
+.timer-container {
+  width: 250px;
+  height: max-content;
+}
 
 .timer {
   display: flex;

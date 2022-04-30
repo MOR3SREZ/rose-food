@@ -28,15 +28,14 @@ const Timer = () => {
 
   return (
     <div className={styles.countdown}>
-      <div className={styles.top}>
+      <div className={styles.container}>
         <span>
           {day} <small>Day</small>
         </span>
         <span>
           {hour < 10 ? '0' + hour : hour} <small>Hour</small>
         </span>
-      </div>
-      <div className={styles.bottom}>
+
         <span>
           {minute < 10 ? '0' + minute : minute} <small>Minute</small>
         </span>

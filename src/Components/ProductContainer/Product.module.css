@@ -1,0 +1,147 @@
+.product {
+  margin-top: 4rem;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper {
+  width: 90%;
+  height: 95%;
+  display: flex;
+  border-radius: 1rem;
+  overflow: hidden;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.timer-section {
+  width: 10%;
+  height: 100%;
+  background-color: var(--primary-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.timer-container {
+  height: max-content;
+  width: 150px;
+}
+
+.product-section {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.image {
+  min-width: 50%;
+  height: 100%;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container {
+  width: 60%;
+  height: 90%;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.container h2 {
+  color: var(--primary-black);
+  font-size: 2rem;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 80%;
+  width: 90%;
+  margin-top: 2rem;
+  color: var(--primary-black);
+}
+
+.available span {
+  color: var(--primary-orange);
+}
+.price {
+  padding-top: 1rem;
+}
+
+.price .new-price {
+}
+.price .old-price {
+  padding-left: 1rem;
+  color: var(--primary-gray);
+  font-size: 0.9rem;
+  text-decoration: line-through;
+}
+
+.description {
+  padding-top: 1rem;
+  line-height: 1.8rem;
+}
+
+.sizes {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sizes p:first-child {
+  font-size: 1.1rem;
+}
+
+.sizes p:last-child {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  justify-content: space-around;
+}
+.sizes p:last-child span {
+  margin: 0rem 0.5rem;
+  border-bottom: 3px solid var(--primary-orange);
+  padding: 0rem 1rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.quantity,
+.button-container {
+  margin-top: 1rem;
+}
+
+.button-container button {
+  cursor: pointer;
+  margin-right: 1rem !important;
+  background-color: var(--primary-orange);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--primary-black);
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.button-container button:last-child {
+  background-color: aliceblue;
+  color: var(--primary-black);
+}
