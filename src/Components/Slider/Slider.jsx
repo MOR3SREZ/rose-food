@@ -11,7 +11,7 @@ const Slider = ({ item }) => {
 
   useEffect(() => {
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-  }, [width]);
+  }, [width, item]);
 
   return (
     <motion.div className={styles.carousel} ref={carousel} key={Math.random()}>
