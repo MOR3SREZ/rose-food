@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { allProduct } from '../../App';
+import { motion } from 'framer-motion';
 
 //Components
 import Timer from '../Discount/Timer/Timer';
@@ -13,6 +14,7 @@ const ProductContainer = ({ food }) => {
     <section className={styles.product}>
       <div className={styles.wrapper}>
         <div className={styles['timer-section']}>
+          <h3>Hurry Up!!!</h3>
           <div className={styles['timer-container']}>
             <Timer />
           </div>
@@ -20,7 +22,12 @@ const ProductContainer = ({ food }) => {
         {food && (
           <div className={styles['product-section']}>
             <div className={styles.image}>
-              <img src={food.image} alt='' />
+              <motion.img
+                whileHover={{ scale: 1.25 }}
+                transition={{ ease: 'easeInOut' }}
+                src={food.image}
+                alt=''
+              />
             </div>
             <div className={styles.container}>
               <h2>{food.title}</h2>
