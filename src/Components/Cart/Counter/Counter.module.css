@@ -1,0 +1,45 @@
+.order-counter {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 30px;
+}
+
+.order-counter button {
+  border: none;
+  color: var(--link);
+  background-color: #efefef;
+
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 5px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+}
+.order-counter button:hover {
+  background-color: #d1d1d1;
+}
+
+.order-counter input {
+  width: 40px;
+  height: 30px;
+  border-radius: 8px;
+  border: none;
+  padding: 11px;
+}
+
+.order-counter input::-webkit-outer-spin-button,
+.order-counter input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.order-counter input[type='number'] {
+  -moz-appearance: textfield; /* Firefox */
+}

@@ -1,0 +1,69 @@
+.cart-container {
+  min-height: 70vh;
+  width: 100%;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.cart-products {
+  margin: 3rem 1rem 1rem 1rem;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.cart-cards {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 1rem;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+.cart-total {
+  align-self: flex-end;
+  /* min-height: 300px; */
+  width: 30%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: var(--primary-orange);
+}
+.cart-total > div {
+  border-bottom: 1px solid rgba(138, 138, 138, 0.493);
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+.cart-total > div:last-of-type {
+  border: none;
+  margin-bottom: 3rem;
+}
+
+.cart-total button {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: none;
+  background-color: var(--primary-black);
+  color: white;
+  border-radius: 1rem;
+}
