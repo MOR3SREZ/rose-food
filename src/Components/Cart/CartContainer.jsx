@@ -1,7 +1,8 @@
-//Styles
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
+import { motion } from 'framer-motion';
 import CartCard from './CartCards/CartCard';
+//Styles
 import styles from './CartContainer.module.css';
 
 const CartContainer = () => {
@@ -20,10 +21,10 @@ const CartContainer = () => {
     <section className={styles['cart-container']}>
       <h2>Your cart</h2>
       <div className={styles['cart-products']}>
-        <div className={styles['cart-cards']}>
+        <motion.div layout className={styles['cart-cards']}>
           {cartItems &&
             cartItems.map((item) => <CartCard items={item} key={item.id} />)}
-        </div>
+        </motion.div>
         <div className={styles['cart-total']}>
           <div className={styles['total-price']}>
             <span>Total Price:</span> <span>${sum.toFixed(2)}</span>

@@ -8,9 +8,60 @@ import Timer from '../Discount/Timer/Timer';
 //styles
 import styles from './Product.module.css';
 import Counter from '../Cart/Counter/Counter';
+import { useDispatch, useSelector } from 'react-redux';
+import { cartActions } from '../../Store/cart-slice';
+import { favoriteActions } from '../../Store/favorite-slice';
 
 const ProductContainer = ({ food }) => {
-  // console.log(food);
+  const [toggleCart, setToggleCart] = useState(false);
+  const [toggleFavorite, setToggleFavorite] = useState(false);
+
+  const cartItems = useSelector((state) => state.cart.cartItems);
+  const favoriteItems = useSelector((state) => state.favorite.favoriteItems);
+  const dispatch = useDispatch();
+
+  // to check if item is in listItem and dont lose it on rerender!!
+  //Check for Cart
+  useEffect(() => {
+    cartItems.map((item) => {
+      if (item.id === food.id) {
+        setToggleCart(true);
+        return null;
+      }
+    });
+  });
+
+  const cartClickHandler = () => {
+    if (toggleCart) {
+      dispatch(cartActions.removeFromCart(food.id));
+    } else if (!toggleCart) {
+      dispatch(cartActions.addToCart(food));
+    }
+    setToggleCart((prev) => !prev);
+  };
+
+  //Check for Favorite
+  useEffect(() => {
+    favoriteItems.map((item) => {
+      if (item.id === food.id) {
+        setToggleFavorite(true);
+        return null;
+      }
+    });
+  });
+
+  const favoriteClickHandler = () => {
+    if (toggleFavorite) {
+      dispatch(favoriteActions.removeFromFavorite(food));
+    } else if (!toggleFavorite) {
+      dispatch(favoriteActions.addToFavorite(food));
+    }
+    setToggleFavorite((prev) => !prev);
+  };
+
+  const price = food.price;
+  const offPrice = (price * +food.off) / 100;
+  const finalPrice = price - offPrice;
   return (
     <section className={styles.product}>
       <div className={styles.wrapper}>
@@ -43,7 +94,7 @@ const ProductContainer = ({ food }) => {
                     Price: ${food.price}
                   </span>
                   {food.off > 0 && (
-                    <span className={styles['old-price']}>$12.00</span>
+                    <span className={styles['old-price']}>${finalPrice}</span>
                   )}
                 </div>
                 <div className={styles.description}>
@@ -56,14 +107,17 @@ const ProductContainer = ({ food }) => {
                   </p>
                 </div>
                 <div className={styles.quantity}>
-                  quantity:
+                  <p>quantity:</p>
                   <Counter id={food.id} />
                 </div>
 
                 <div className={styles['button-container']}>
-                  <button>favorite</button>
-                  <button>add to cart</button>
-                  <button>Buy now</button>
+                  <button onClick={favoriteClickHandler}>
+                    {!toggleFavorite ? 'Add Favorite' : 'Remove Favorite'}
+                  </button>
+                  <button onClick={cartClickHandler}>
+                    {!toggleCart ? 'Add to Cart' : 'Remove From Cart'}
+                  </button>
                 </div>
               </div>
             </div>

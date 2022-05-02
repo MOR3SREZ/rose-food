@@ -1,5 +1,6 @@
 //Components
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import TrashCan from '../../../assets/icons/TrashCan';
 import { cartActions } from '../../../Store/cart-slice';
@@ -16,7 +17,7 @@ const CartCard = ({ items }) => {
   };
 
   return (
-    <div className={styles.card}>
+    <motion.div layout className={styles.card}>
       <div className={styles['image-container']}>
         <Link to={`/product/${item.id}`}>
           <img src={item.image} alt='' />
@@ -37,7 +38,7 @@ const CartCard = ({ items }) => {
       <div className={styles.total}>
         <p>{(item.price * items.qty).toFixed(2)}</p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default CartCard;

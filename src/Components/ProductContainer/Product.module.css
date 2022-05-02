@@ -130,6 +130,16 @@
   font-size: 1rem;
   text-align: center;
 }
+.quantity {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  height: 50px;
+}
+.quantity p {
+  margin: 0 !important;
+  align-self: center;
+}
 
 .quantity,
 .button-container {
@@ -149,9 +159,4 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}
-
-.button-container button:last-child {
-  background-color: aliceblue;
-  color: var(--primary-black);
 }
