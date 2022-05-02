@@ -8,7 +8,6 @@ import styles from './FavoriteFoods.module.css';
 
 const FavoriteFoods = () => {
   const favoriteFoods = useSelector((state) => state.favorite.favoriteItems);
-  console.log(favoriteFoods);
   return (
     <section className={styles.favorite}>
       <h2>This is Your Favorite Foods!</h2>

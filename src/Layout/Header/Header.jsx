@@ -41,8 +41,6 @@ const Header = () => {
         return favoriteItems.length;
       } else return favoriteItems.length;
     });
-
-    console.log('cart run');
   }, [cartItems.length, favoriteItems.length]);
 
   return (

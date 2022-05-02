@@ -7,6 +7,7 @@ import Timer from '../Discount/Timer/Timer';
 
 //styles
 import styles from './Product.module.css';
+import Counter from '../Cart/Counter/Counter';
 
 const ProductContainer = ({ food }) => {
   // console.log(food);
@@ -54,7 +55,10 @@ const ProductContainer = ({ food }) => {
                     <span>1</span> <span>2</span> <span>family</span>
                   </p>
                 </div>
-                <div className={styles.quantity}>quantity:</div>
+                <div className={styles.quantity}>
+                  quantity:
+                  <Counter id={food.id} />
+                </div>
 
                 <div className={styles['button-container']}>
                   <button>favorite</button>
