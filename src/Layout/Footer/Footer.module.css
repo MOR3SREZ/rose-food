@@ -65,3 +65,54 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
+@media only screen and (max-width: 950px) {
+  footer {
+    height: auto;
+    margin: 0;
+  }
+  .top {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .contact-information {
+    min-width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .other-links {
+    margin-top: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .other-links > div {
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  footer {
+    text-align: center;
+    padding: 0;
+  }
+  footer .contact-information > div:first-child {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .contact-information {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

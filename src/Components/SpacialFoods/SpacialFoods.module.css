@@ -1,23 +1,31 @@
-.recipe{
+.recipe {
   display: flex;
   height: 100%;
   margin: 4rem 0rem 2rem;
-  flex-direction: column;  
+  flex-direction: column;
 }
-.recipe h2{
+.recipe h2 {
   display: block;
   margin: 0rem auto;
   color: var(--primary-gray);
-
 }
-.discounted-foods,.popular-foods {
+.discounted-foods,
+.popular-foods {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 1rem 0rem;
 }
 
-.discounted-foods h3,.popular-foods h3{
+.discounted-foods h3,
+.popular-foods h3 {
   font-size: 2rem;
   color: var(--primary-black);
+}
+
+@media only screen and (max-width: 550px) {
+  .discounted-foods h3,
+  .popular-foods h3 {
+    font-size: 1.5rem;
+  }
 }

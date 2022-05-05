@@ -5,6 +5,7 @@
   align-items: center;
 }
 .logo-name h1 {
+  width: max-content;
   font-size: 2rem;
   font-family: var(--logo-font);
   font-weight: 900;
@@ -24,4 +25,12 @@
 .logo a {
   display: inline-flex;
   align-items: center;
+}
+@media only screen and (max-width: 550px) {
+  nav .logo-name h1 {
+    font-size: 1rem;
+  }
+  nav .logo-svg {
+    width: 30px;
+  }
 }

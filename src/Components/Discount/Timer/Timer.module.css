@@ -26,7 +26,6 @@
   margin-top: 1rem;
   flex-direction: column;
   align-items: center;
-  /* width: 50%; */
   color: var(--primary-orange);
   font-size: 2.5rem;
 }
@@ -34,4 +33,16 @@
 .container span small {
   color: rgb(230, 230, 230);
   font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 550px) {
+  .container {
+    height: 100%;
+  }
+  .container span {
+    font-size: 1.5rem;
+  }
+  .container span small {
+    font-size: 0.8rem;
+  }
 }

@@ -33,7 +33,7 @@ const Slides = ({ item }) => {
             >
               Explore Menu
               <motion.span
-                animate={isHover ? { x: '20%' } : { x: 0 }}
+                animate={isHover ? { x: '30%' } : { x: 0 }}
                 transition={{ ease: 'easeIn', duration: 0.2 }}
               >
                 <svg

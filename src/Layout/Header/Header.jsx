@@ -10,6 +10,7 @@ import './Header.css';
 import CartBasket from '../../assets/icons/CartBasket';
 import Favorite from '../../assets/icons/Favorite';
 import { useEffect, useState } from 'react';
+import Hamburger from '../../assets/icons/Hamburger';
 
 const Header = () => {
   const controlsCart = useAnimation();
@@ -20,6 +21,7 @@ const Header = () => {
 
   const [cartLength, setCartLength] = useState(cartItems.length);
   const [favoriteLength, setFavoriteLength] = useState(favoriteItems.length);
+  const [open, setOpen] = useState(false);
 
   //animation controls for cart and favorite
   useEffect(() => {
@@ -43,11 +45,12 @@ const Header = () => {
     });
   }, [cartItems.length, favoriteItems.length]);
 
+  //Hamburger handler
   return (
     <nav>
       <Logo />
 
-      <div className='nav-links'>
+      <div className={`nav-links ${open ? 'active' : ''}`}>
         <ul>
           <li>
             <NavLink to='/'>Home</NavLink>
@@ -75,6 +78,9 @@ const Header = () => {
           <div className='favorite-counter'>{favoriteLength}</div>
         </Link>
       </motion.div>
+      <div className='hamburger' onClick={() => setOpen((prev) => !prev)}>
+        <Hamburger />
+      </div>
     </nav>
   );
 };
