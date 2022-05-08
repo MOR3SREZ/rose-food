@@ -115,4 +115,8 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
   }
+  .other-links h3 {
+    padding: 0rem 1rem;
+    cursor: pointer;
+  }
 }

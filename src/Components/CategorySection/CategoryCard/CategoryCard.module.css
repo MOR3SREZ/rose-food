@@ -5,6 +5,7 @@
   overflow: hidden;
   border-radius: 50%;
   cursor: pointer;
+  margin: auto;
 }
 
 .image-container {
@@ -40,4 +41,29 @@
 
 .image-overlay p {
   margin: 0 !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .category-card {
+    width: 125px;
+    height: 125px;
+  }
+  .image-overlay h3 {
+    font-size: 1rem;
+  }
+  .image-overlay p {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .category-card {
+    width: 100px;
+    height: 100px;
+  }
+  .image-overlay h3 {
+    font-size: 0.8rem;
+  }
+  .image-overlay p {
+    font-size: 0.6rem;
+  }
 }

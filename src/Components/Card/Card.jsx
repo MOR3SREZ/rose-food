@@ -99,7 +99,7 @@ const Card = ({ food }) => {
           onHoverEnd={() => setImgHovered(false)}
         >
           <motion.img
-            alt='some shit'
+            alt=''
             src={food.image}
             animate={isHover ? 'end' : ''}
             transition={{ ease: 'easeInOut' }}
@@ -109,7 +109,6 @@ const Card = ({ food }) => {
             <div className={styles.icons}>
               <motion.div
                 className={`${styles.icon} ${styles.favorite}`}
-                initial={{ x: 0, opacity: 0 }}
                 animate={imgIsHover ? { x: '65px', opacity: 1 } : {}}
                 transition={{ ease: 'easeInOut' }}
                 whileHover={{ scale: 1.1 }}
@@ -124,7 +123,6 @@ const Card = ({ food }) => {
               </motion.div>
               <motion.div
                 className={`${styles.icon} ${styles.basket}`}
-                initial={{ opacity: 0, x: 0 }}
                 animate={imgIsHover ? { opacity: 1, x: 0 } : {}}
                 transition={{ ease: 'easeInOut' }}
                 whileHover={{ scale: 1.1 }}
@@ -138,7 +136,6 @@ const Card = ({ food }) => {
 
               <motion.div
                 className={`${styles.icon} ${styles.watch}`}
-                initial={{ x: 0, opacity: 0 }}
                 animate={imgIsHover ? { x: '-65px', opacity: 1 } : {}}
                 transition={{ ease: 'easeInOut' }}
                 whileHover={{ scale: 1.1 }}

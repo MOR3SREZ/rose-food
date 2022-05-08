@@ -88,6 +88,18 @@
   align-items: center;
   justify-content: space-between;
 }
+.icon.favorite {
+  opacity: 0;
+  transform: translateX(0);
+}
+.icon.basket {
+  opacity: 0;
+  transform: translateX(0);
+}
+.icon.watch {
+  opacity: 0;
+  transform: translateX(0);
+}
 
 .icon > a {
   display: block;
@@ -156,4 +168,38 @@
   text-decoration: line-through;
   text-decoration-color: var(--primary-gray);
   font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 1150px) {
+  .icons {
+    opacity: 1;
+  }
+  .icon.favorite {
+    opacity: 1;
+    transform: translateX(65px);
+  }
+  .icon.basket {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .icon.watch {
+    opacity: 1;
+    transform: translateX(-65px);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .card {
+    width: 250px;
+    min-width: 250px;
+    height: 350px;
+    margin: 1rem 0.5rem;
+  }
+  .final-price {
+    font-size: 0.8rem;
+  }
+
+  .old-price {
+    font-size: 0.7rem;
+  }
 }

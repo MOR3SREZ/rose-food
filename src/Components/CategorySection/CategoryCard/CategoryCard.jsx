@@ -23,8 +23,7 @@ const CategoryCard = ({ item, setSelected, selected }) => {
       animate={
         selected === item.name
           ? {
-              width: '200px',
-              height: '200px',
+              scale: 1.3,
               border: '2px solid var(--primary-orange)',
             }
           : {}

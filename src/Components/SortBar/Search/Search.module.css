@@ -1,10 +1,10 @@
 .search-input {
   width: 500px;
+  min-width: 200px;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: aliceblue; */
 }
 .wrapper {
   height: 40px;
@@ -41,4 +41,10 @@
 .wrapper .icon:hover svg path {
   fill: var(--primary-orange);
   transition: fill ease 0.25s;
+}
+
+@media only screen and (max-width: 550px) {
+  .search-input {
+    padding-bottom: 0.5rem;
+  }
 }

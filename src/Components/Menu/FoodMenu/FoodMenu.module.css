@@ -64,3 +64,28 @@
   background-color: var(--primary-red);
   color: white;
 }
+@media only screen and (max-width: 550px) {
+  .paginate {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.5s;
+  }
+  .pagination-btn {
+    width: max-content;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .pagination-btn li {
+    overflow: hidden;
+    margin: 0rem 0.2rem;
+  }
+  .pagination-btn li > a {
+    padding: 0.3rem 0.8rem;
+  }
+}
