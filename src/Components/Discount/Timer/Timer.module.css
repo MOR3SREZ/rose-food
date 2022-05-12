@@ -34,7 +34,9 @@
   color: rgb(230, 230, 230);
   font-size: 1.2rem;
 }
-
+.timer-container .countdown {
+  padding: 0;
+}
 @media only screen and (max-width: 550px) {
   .container {
     height: 100%;

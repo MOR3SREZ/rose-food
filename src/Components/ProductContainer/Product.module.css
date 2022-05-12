@@ -43,11 +43,9 @@
 .product-section {
   width: 100%;
   height: 100%;
-
   display: flex;
-  align-items: center;
   flex-direction: row;
-  justify-content: center;
+  overflow: hidden;
 }
 .image {
   min-width: 50%;
@@ -162,20 +160,137 @@
 }
 
 @media only screen and (max-width: 1150px) {
+  .wrapper {
+    width: 95%;
+    height: 95%;
+    /* flex-direction: column-reverse; */
+  }
+}
+@media only screen and (max-width: 950px) {
   .product {
-    margin-top: 4rem;
-    height: 90vh;
+    height: 100%;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   .wrapper {
-    width: 90%;
-    height: 95%;
-    flex-direction: column;
+    flex-direction: column-reverse;
+  }
 
+  .description {
+    display: none;
+  }
+  .image {
+    width: 50%;
+    height: 100%;
     overflow: hidden;
+  }
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .timer-section {
+    width: 100%;
+    height: auto;
+    align-items: center;
     justify-content: center;
+    flex-direction: row;
+  }
+  .timer-section h3 {
+    position: absolute;
+    color: var(--primary-red);
+    display: flex;
+    height: 100%;
+    left: 5%;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  .timer-container {
+    margin-top: 0rem;
+    height: max-content;
+    width: 100%;
+  }
+  .timer-section .container span {
+    margin-top: 0rem !important;
+  }
+  .button-container > button {
+    margin-top: 0.5rem !important;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .product {
+    margin-top: 5rem;
+    height: 85vh;
+  }
+
+  .wrapper {
+    position: relative;
+    max-width: 400px;
+  }
+  .product-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .image {
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+  }
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .timer-section {
+    display: none;
+  }
+
+  .container {
+    position: absolute;
+    bottom: 0;
+    height: 50vh;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    -moz-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .container h2 {
+    color: var(--primary-black);
+    font-size: 1.5rem;
+  }
+
+  .content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin-top: 1rem;
+    color: var(--primary-black);
+  }
+  .content p,
+  span {
+    font-size: 0.8rem;
+  }
+  .content .sizes p,
+  .content .sizes p > span {
+    font-size: 0.8rem;
+  }
+  .button-container > button {
+    font-size: 0.8rem;
+    margin-top: 0.5rem !important;
   }
 }
