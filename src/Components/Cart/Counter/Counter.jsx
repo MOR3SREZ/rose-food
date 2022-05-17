@@ -31,7 +31,13 @@ const Counter = ({ id }) => {
       <button className={styles.decrease} onClick={decreaseHandler}>
         -
       </button>
-      <input type='number' min={1} max={100} value={count} readOnly />
+      <input
+        type='number'
+        min={1}
+        max={100}
+        value={count}
+        onChange={console.log('change')}
+      />
       <button className={styles.increase} onClick={increaseHandler}>
         +
       </button>

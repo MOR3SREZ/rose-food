@@ -26,10 +26,9 @@ const ProductContainer = ({ food }) => {
     cartItems.map((item) => {
       if (item.id === food.id) {
         setToggleCart(true);
-        return null;
-      }
+      } else setToggleCart(false);
     });
-  });
+  }, [food, cartItems]);
 
   const cartClickHandler = () => {
     if (toggleCart) {
@@ -45,10 +44,9 @@ const ProductContainer = ({ food }) => {
     favoriteItems.map((item) => {
       if (item.id === food.id) {
         setToggleFavorite(true);
-        return null;
-      }
+      } else setToggleFavorite(false);
     });
-  });
+  }, [food, favoriteItems]);
 
   const favoriteClickHandler = () => {
     if (toggleFavorite) {

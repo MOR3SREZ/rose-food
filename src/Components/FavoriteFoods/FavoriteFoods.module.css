@@ -27,3 +27,9 @@
   color: var(--primary-black);
   margin-top: 4rem;
 }
+
+@media only screen and (max-width: 950px) {
+  .foods-container {
+    justify-content: center;
+  }
+}
