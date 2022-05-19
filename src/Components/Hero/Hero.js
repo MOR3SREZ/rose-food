@@ -79,7 +79,7 @@ const Hero = () => {
                   animate={{
                     rotate: 0,
                   }}
-                  transition={{ duration: 1, type: 'spring' }}
+                  transition={{ duration: 1.2, type: 'spring' }}
                 >
                   <Slides item={item} />
                 </motion.li>
@@ -95,7 +95,7 @@ const Hero = () => {
                     rotate: 0,
                   }}
                   animate={{ rotate: `${prev.dir * -180}deg` }}
-                  transition={{ duration: 1, type: 'spring' }}
+                  transition={{ duration: 1.2, type: 'spring' }}
                 >
                   <Slides item={item} />
                 </motion.li>
@@ -111,7 +111,7 @@ const Hero = () => {
                   animate={{
                     rotate: 0,
                   }}
-                  transition={{ duration: 1, type: 'spring' }}
+                  transition={{ duration: 1.2, type: 'spring' }}
                 >
                   <Slides item={item} />
                 </motion.li>

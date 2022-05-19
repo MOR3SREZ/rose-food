@@ -39,13 +39,10 @@ const Card = ({ food }) => {
   // to check if item is in listItem and dont lose it on rerender!!
   //Check for Cart
   useEffect(() => {
-    cartItems.map((item) => {
-      if (item.id === food.id) {
-        setToggleCart(true);
-        return null;
-      }
-    });
-  });
+    if (cartItems.some((item) => item.id === food.id)) {
+      setToggleCart(true);
+    } else setToggleCart(false);
+  }, [cartItems, food]);
 
   const cartClickHandler = () => {
     if (toggleCart) {
@@ -58,13 +55,10 @@ const Card = ({ food }) => {
 
   //Check for Favorite
   useEffect(() => {
-    favoriteItems.map((item) => {
-      if (item.id === food.id) {
-        setToggleFavorite(true);
-        return null;
-      }
-    });
-  });
+    if (favoriteItems.some((item) => item.id === food.id)) {
+      setToggleFavorite(true);
+    } else setToggleFavorite(false);
+  }, [favoriteItems, food]);
 
   const favoriteClickHandler = () => {
     if (toggleFavorite) {

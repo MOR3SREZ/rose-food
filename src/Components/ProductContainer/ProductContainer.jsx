@@ -13,8 +13,8 @@ import { cartActions } from '../../Store/cart-slice';
 import { favoriteActions } from '../../Store/favorite-slice';
 
 const ProductContainer = ({ food }) => {
-  const [toggleCart, setToggleCart] = useState(false);
-  const [toggleFavorite, setToggleFavorite] = useState(false);
+  const [toggleCart, setToggleCart] = useState();
+  const [toggleFavorite, setToggleFavorite] = useState();
 
   const cartItems = useSelector((state) => state.cart.cartItems);
   const favoriteItems = useSelector((state) => state.favorite.favoriteItems);
@@ -23,12 +23,10 @@ const ProductContainer = ({ food }) => {
   // to check if item is in listItem and dont lose it on rerender!!
   //Check for Cart
   useEffect(() => {
-    cartItems.map((item) => {
-      if (item.id === food.id) {
-        setToggleCart(true);
-      } else setToggleCart(false);
-    });
-  }, [food, cartItems]);
+    if (cartItems.some((item) => item.id === food.id)) {
+      setToggleCart(true);
+    } else setToggleCart(false);
+  }, [cartItems, food]);
 
   const cartClickHandler = () => {
     if (toggleCart) {
@@ -41,12 +39,10 @@ const ProductContainer = ({ food }) => {
 
   //Check for Favorite
   useEffect(() => {
-    favoriteItems.map((item) => {
-      if (item.id === food.id) {
-        setToggleFavorite(true);
-      } else setToggleFavorite(false);
-    });
-  }, [food, favoriteItems]);
+    if (favoriteItems.some((item) => item.id === food.id)) {
+      setToggleFavorite(true);
+    } else setToggleFavorite(false);
+  }, [favoriteItems, food]);
 
   const favoriteClickHandler = () => {
     if (toggleFavorite) {
@@ -106,15 +102,15 @@ const ProductContainer = ({ food }) => {
                 </div>
                 <div className={styles.quantity}>
                   <p>quantity:</p>
-                  <Counter id={food.id} />
+                  <Counter food={food} />
                 </div>
 
                 <div className={styles['button-container']}>
                   <button onClick={favoriteClickHandler}>
-                    {!toggleFavorite ? 'Add Favorite' : 'Remove Favorite'}
+                    {toggleFavorite ? 'Remove Favorite' : 'Add Favorite'}
                   </button>
                   <button onClick={cartClickHandler}>
-                    {!toggleCart ? 'Add to Cart' : 'Remove From Cart'}
+                    {toggleCart ? 'Remove From Cart' : 'Add to Cart'}
                   </button>
                 </div>
               </div>

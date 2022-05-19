@@ -34,7 +34,7 @@ const CartCard = ({ items }) => {
         </div>
       </div>
       <div className={styles['wrapper-bottom']}>
-        <Counter id={item.id} />
+        <Counter food={item} />
         <div className={styles['trash-can']} onClick={clickHandler}>
           <TrashCan />
         </div>
