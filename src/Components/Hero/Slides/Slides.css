@@ -39,7 +39,8 @@
 }
 
 .quote-side {
-  padding-right: 4rem;
+  margin-right: 0.5rem;
+  padding-right: 3rem;
   width: 25%;
   background: rgba(255, 255, 255, 0);
   backdrop-filter: blur(8px);
