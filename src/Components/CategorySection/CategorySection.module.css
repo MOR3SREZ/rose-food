@@ -1,6 +1,7 @@
 section.category-section {
   padding-top: 5rem;
   min-height: 50vh;
+  min-width: 100%;
   width: 100%;
   display: flex;
   align-items: center;
