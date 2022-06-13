@@ -18,7 +18,7 @@ const CategorySection = () => {
   }, [dispatch, selected]);
 
   return (
-    <section className={styles.CategorySection}>
+    <section className={styles.CategorySection} id='category-section'>
       <h1>Category</h1>
       <div className={styles.category}>
         {CategoryList &&
