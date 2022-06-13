@@ -1,13 +1,4 @@
-.CategorySection {
-  padding-top: 5rem;
-  min-height: 50vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-/* #category-section {
+/* .CategorySection {
   padding-top: 5rem;
   min-height: 50vh;
   width: 100%;
@@ -16,6 +7,15 @@
   align-items: center;
   justify-content: space-around;
 } */
+#category-section {
+  padding-top: 5rem;
+  min-height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
 .category-section h1 {
   margin-bottom: 1rem;
 }
