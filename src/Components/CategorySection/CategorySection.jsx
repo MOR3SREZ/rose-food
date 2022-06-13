@@ -18,7 +18,7 @@ const CategorySection = () => {
   }, [selected]);
 
   return (
-    <section id='category-section'>
+    <section className={styles['category-section']}>
       <h1>Category</h1>
       <div className={styles.category}>
         {CategoryList &&
