@@ -1,4 +1,4 @@
-section.category-section {
+#category-section {
   padding-top: 5rem;
   min-height: 50vh;
   min-width: 100%;
@@ -8,7 +8,7 @@ section.category-section {
   justify-content: space-evenly;
   flex-direction: column;
 }
-.category-section h1 {
+#category-section h1 {
   margin-bottom: 1rem;
 }
 
@@ -21,7 +21,7 @@ section.category-section {
 }
 
 @media only screen and (max-width: 1150px) {
-  .category-section {
+  #category-section {
     padding-bottom: 2rem;
   }
   .category {

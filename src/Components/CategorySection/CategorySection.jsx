@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import CategoryList from '../../utils/category';
 import { useDispatch } from 'react-redux';
 import { filterActions } from '../../Store/filter-slice';
@@ -18,7 +18,7 @@ const CategorySection = () => {
   }, [selected]);
 
   return (
-    <section className={styles['category-section']}>
+    <section id='category-section'>
       <h1>Category</h1>
       <div className={styles.category}>
         {CategoryList &&
