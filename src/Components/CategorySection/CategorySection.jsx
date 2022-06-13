@@ -15,10 +15,10 @@ const CategorySection = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(filterActions.categoryFilter(selected));
-  }, [selected]);
+  }, [dispatch, selected]);
 
   return (
-    <section className={styles['category-section']}>
+    <div className={styles['category-section']}>
       <h1>Category</h1>
       <div className={styles.category}>
         {CategoryList &&
@@ -31,7 +31,7 @@ const CategorySection = () => {
             />
           ))}
       </div>
-    </section>
+    </div>
   );
 };
 
