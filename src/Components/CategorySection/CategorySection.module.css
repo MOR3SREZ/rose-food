@@ -1,12 +1,12 @@
 .category-section {
-  padding-top: 5rem;
-  min-height: 50vh;
-  min-width: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
+  padding-top: 5rem !important;
+  min-height: 50vh !important;
+  min-width: 100% !important;
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-evenly !important;
+  flex-direction: column !important;
 }
 .category-section h1 {
   margin-bottom: 1rem;
