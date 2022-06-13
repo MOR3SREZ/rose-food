@@ -18,7 +18,7 @@ const CategorySection = () => {
   }, [dispatch, selected]);
 
   return (
-    <div className={styles['category-section']}>
+    <section className={styles.CategorySection}>
       <h1>Category</h1>
       <div className={styles.category}>
         {CategoryList &&
@@ -31,7 +31,7 @@ const CategorySection = () => {
             />
           ))}
       </div>
-    </div>
+    </section>
   );
 };
 
